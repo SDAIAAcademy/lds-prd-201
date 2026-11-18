@@ -235,6 +235,8 @@ def main(argv=None) -> int:
     print(f"Answers from: {mode}")
     if not use_model and not a.standin:
         print("No model settings found (LLM_BASE_URL, LLM_MODEL, LLM_API_KEY), so the stand-in answers.")
+    if not use_model:
+        print("The stand-in ignores the prompt: changing the prompt does not change its outputs.")
 
     RUNS.mkdir(exist_ok=True)
     cache_path = RUNS / "cache.json"
@@ -258,7 +260,7 @@ def main(argv=None) -> int:
         else:
             out = standin_reply(text, (c.get("record_codes") or "").split(), codes)
         rows.append({"case_id": c["case_id"], "text": text, "record_codes": c.get("record_codes", ""),
-                     "output": out, "pass_fail": "", "failure_type": "", "note": ""})
+                     "output": out, "pass_fail": "", "failure_type": "", "note": "", "answers_from": mode})
         print(f"{c['case_id']}: done")
 
     out_csv = RUNS / f"{a.label}.csv"

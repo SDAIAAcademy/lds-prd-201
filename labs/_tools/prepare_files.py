@@ -484,14 +484,15 @@ A10 بعض المنسقين يتجاوزون مركز الاتصال ويسأل�
         return out
 
     g_demo, g30, g10 = run_and_grade(demo, demo_rows), run_and_grade(set30, rows30), run_and_grade(set10, rows10)
-    log_header = ["case_id", "text", "record_codes", "output", "pass_fail", "failure_type", "note"]
+    STANDIN = "stand-in (scripted, not a language model)"
+    log_header = ["case_id", "text", "record_codes", "output", "pass_fail", "failure_type", "note", "answers_from"]
     write_csv(PROTO / "prototype_log_reference.csv", log_header,
-              [[g["case_id"], g["text"], g["record_codes"], g["output"], "", "", ""] for g in g30])
+              [[g["case_id"], g["text"], g["record_codes"], g["output"], "", "", "", STANDIN] for g in g30])
     # the same log graded with the reference grader: the starting point of lab 2.4, handed out after lab 2.3
     write_csv(PROTO / "prototype_log_graded.csv",
-              ["case_id", "language", "case_type", "text", "record_codes", "output", "pass_fail", "failure_type"],
+              ["case_id", "language", "case_type", "text", "record_codes", "output", "pass_fail", "failure_type", "answers_from"],
               [[g["case_id"], g["language"], g["type"], g["text"], g["record_codes"], g["output"],
-                "إخفاق" if g["failures"] else "اجتياز", " ".join(g["failures"])] for g in g30])
+                "إخفاق" if g["failures"] else "اجتياز", " ".join(g["failures"]), STANDIN] for g in g30])
 
     def summary(gs):
         s = {"n": len(gs), "pass": sum(g["pass"] for g in gs)}
@@ -544,9 +545,9 @@ LLM_API_KEY=""")
 
     # manual log for the chat-assistant route
     wb = Workbook()
-    ws = sheet(wb, "السجل", ["الحالة", "نص الرسالة", "رموز الإعادة", "مخرج النموذج", "اجتياز أو إخفاق", "نوع الإخفاق", "ملاحظة"],
-               [(r["case_id"], r["text"], r["record_codes"], "", "", "", "") for r in rows30],
-               [7, 50, 10, 50, 12, 24, 30], inputs=(4, 5, 6, 7), first=True)
+    ws = sheet(wb, "السجل", ["الحالة", "نص الرسالة", "رموز الإعادة", "مخرج النموذج", "اجتياز أو إخفاق", "نوع الإخفاق", "ملاحظة", "مصدر الإجابات: النموذج باسمه وتاريخ التشغيل"],
+               [(r["case_id"], r["text"], r["record_codes"], "", "", "", "", "") for r in rows30],
+               [7, 50, 10, 50, 12, 24, 30, 30], inputs=(4, 5, 6, 7, 8), first=True)
     dropdown(ws, "E", ["اجتياز", "إخفاق"], 30)
     dropdown(ws, "F", [f"{k} {v}" for k, v in G.FAILURES.items() if k != "F8"], 30)
     save(wb, FILES / "prototype_log.xlsx")
@@ -817,7 +818,7 @@ LLM_API_KEY=""")
         gcap.append({**r, "output": o, "failures": f, "pass": not f, "variant": t["variant"], "route": t["route"],
                      "language": "ar", "type": t["variant"]})
     write_csv(FILES / "capstone" / "complaints_log_reference.csv", log_header,
-              [[g["case_id"], g["text"], "", g["output"], "", "", ""] for g in gcap])
+              [[g["case_id"], g["text"], "", g["output"], "", "", "", STANDIN] for g in gcap])
     figures["capstone30"] = summary(gcap)
     figures["capstone30"]["by_route"] = {}
     for g in gcap:
