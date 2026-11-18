@@ -356,7 +356,8 @@ def main():
                  t.get("type", ""), t.get("behaviour", ""), t.get("route", "")] for t in tickets]
     (REF / "tickets_key.json").write_text(json.dumps(
         {"header": ["ticket_id", "category", "variant", "record_codes", "duplicate_of", "type", "behaviour", "route"],
-         "rows": key_rows}, ensure_ascii=False, indent=0), encoding="utf-8")
+         "rows": key_rows}, ensure_ascii=False, indent=0), encoding="utf-8", newline="
+")
 
     # -------- baseline workbook (lab 1.1)
     wb = Workbook()
@@ -375,7 +376,8 @@ def main():
     dropdown(ws, "H", ["منخفضة", "متوسطة", "عالية"], 12)
     save(wb, FILES / "requests_12.xlsx")
     (REF / "lab_1_2.json").write_text(json.dumps({q: {"class": c, "cost": e, "why": w}
-                                                  for q, _, _, c, e, w in K.REQUESTS}, ensure_ascii=False, indent=1), encoding="utf-8")
+                                                  for q, _, _, c, e, w in K.REQUESTS}, ensure_ascii=False, indent=1), encoding="utf-8", newline="
+")
     figures["triage_key_counts"] = {c: sum(r[3] == c for r in K.REQUESTS) for c in ("توليدي", "تنبؤي", "قواعد", "دون أتمتة")}
 
     # -------- interviews and affinity sheet (lab 1.3)
@@ -412,7 +414,8 @@ A10 بعض المنسقين يتجاوزون مركز الاتصال ويسأل�
         "supported_sources": {"A01": ["P01", "P03 أو تذاكر الإعادة"], "A03": ["P03", "تذاكر الإعادة بلغتين"],
                               "A04": ["P04", "قراءة عينة التذاكر الموسومة «حالة طلب»"], "A06": ["P05", "تذاكر الشكاوى الموسومة «أخرى»"],
                               "A08": ["service_baseline.xlsx", "tickets.xlsx"], "A09": ["P07", "P03"], "A10": ["P02", "P01"]},
-        "chosen_problem": "returned"}, ensure_ascii=False, indent=1), encoding="utf-8")
+        "chosen_problem": "returned"}, ensure_ascii=False, indent=1), encoding="utf-8", newline="
+")
     wb = Workbook()
     ws = sheet(wb, "خريطة الفرص", ["الفرصة", "مهمة المستخدم", "الألم", "الحل الالتفافي", "التكرار (تذاكر)",
                                    "وسيط دقائق المعالجة", "تكلفة الخطأ", "المصدر 1", "المصدر 2", "الترتيب"],
@@ -509,7 +512,8 @@ A10 بعض المنسقين يتجاوزون مركز الاتصال ويسأل�
     (REF / "lab_2_3.json").write_text(json.dumps(
         {"cases": [{k: g[k] for k in ("case_id", "ticket_id", "variant", "type", "behaviour", "language", "failures", "pass")}
                    for g in g30], "summary": figures["proto30"], "demo": figures["demo"]},
-        ensure_ascii=False, indent=1), encoding="utf-8")
+        ensure_ascii=False, indent=1), encoding="utf-8", newline="
+")
 
     # prompt files
     write_text(PROTO / "prompt_starter.txt", """أنت تساعد موظف قسم تراخيص الحفر في أمانة مدينة الرِّمرام.
@@ -562,7 +566,8 @@ LLM_API_KEY=""")
     figures["ten"] = summary(g10)
     (REF / "lab_3_2.json").write_text(json.dumps(
         {"outputs": [{k: g[k] for k in ("case_id", "ticket_id", "variant", "behaviour", "failures", "pass")} for g in g10],
-         "summary": figures["ten"]}, ensure_ascii=False, indent=1), encoding="utf-8")
+         "summary": figures["ten"]}, ensure_ascii=False, indent=1), encoding="utf-8", newline="
+")
 
     # -------- evaluation candidates (lab 3.3): 44 returned + 36 from other categories
     others = []
@@ -631,7 +636,8 @@ LLM_API_KEY=""")
            "by_behaviour": {b: sum(e["behaviour"] == b for e in selected) for b in X.BEHAVIOURS}}
     figures["eval_reference_coverage"] = cov
     (REF / "lab_3_3.json").write_text(json.dumps({"candidates": eval_key, "reference_selection": sorted(sel_ids),
-                                                  "coverage": cov}, ensure_ascii=False, indent=1), encoding="utf-8")
+                                                  "coverage": cov}, ensure_ascii=False, indent=1), encoding="utf-8", newline="
+")
     wb = Workbook()
     n = len(eval_key)
     ws = sheet(wb, "المرشحون", ["المثال", "نص الرسالة", "رموز الإعادة", "اللغة", "مختار؟", "النوع", "السلوك المتوقع", "ملاحظة"],
@@ -681,7 +687,8 @@ LLM_API_KEY=""")
                  "S6 بلا مالك: يُحدَّد مالكه قبل أن يُطلب للتكييف",
                  "S3 يحتاج ربط قراءة الرموز: 10 أيام عمل تدخل في الخطة"],
         "sod": "يطلب مدير المنتج، وتوافق المالكة أو المالك، وتعتمد مراجِعة التصنيف المستوى: لا أحد يوافق على طلبه"},
-        ensure_ascii=False, indent=1), encoding="utf-8")
+        ensure_ascii=False, indent=1), encoding="utf-8", newline="
+")
 
     # -------- templates
     write_text(FILES / "feasibility_note_template.md", """# مذكرة جدوى: [اسم الميزة]
@@ -833,7 +840,8 @@ LLM_API_KEY=""")
     figures["capstone_candidates_by_route"] = {r: sum(c["route"] == r for c in cap_key) for r in K.CAPSTONE_ROUTES}
     (REF / "capstone.json").write_text(json.dumps({"cases": [{k: g[k] for k in ("case_id", "ticket_id", "variant", "route", "failures", "pass")} for g in gcap],
                                                    "summary": figures["capstone30"], "candidates": cap_key},
-                                                  ensure_ascii=False, indent=1), encoding="utf-8")
+                                                  ensure_ascii=False, indent=1), encoding="utf-8", newline="
+")
     cards = "\n".join(f"{k} · {t}" for k, t in K.CONSTRAINT_CARDS)
     routes = "\n".join(f"- {k}: {v}" for k, v in K.CAPSTONE_ROUTES.items())
     c = by_cat["complaint"]
@@ -885,7 +893,8 @@ LLM_API_KEY=""")
 - بطاقة القيد: [ ] · ما تغير في النطاق: [ ] · في المعايير: [ ] · في البيانات: [ ]
 """)
 
-    (REF / "figures.json").write_text(json.dumps(figures, ensure_ascii=False, indent=1), encoding="utf-8")
+    (REF / "figures.json").write_text(json.dumps(figures, ensure_ascii=False, indent=1), encoding="utf-8", newline="
+")
     print(json.dumps(figures, ensure_ascii=False, indent=1))
 
 
