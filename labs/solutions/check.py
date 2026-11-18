@@ -118,6 +118,11 @@ def main() -> int:
     sel = set(l33["reference_selection"])
     recount = {t: sum(1 for c in l33["candidates"] if c["id"] in sel and c["type"] == t) for t in cov["by_type"]}
     check("3.3 coverage recounted from the candidates", recount == cov["by_type"], (recount, cov["by_type"]))
+    cands = l33["candidates"]
+    pool = ({t: sum(c["type"] == t for c in cands) for t in cov["by_type"]},
+            sum(c["language"] == "en" for c in cands), sum(c["behaviour"] == "B5" for c in cands))
+    check("3.3 candidates: 24 normal, 11 edge, 45 must; 23 in English; one B5",
+          pool == ({"معتاد": 24, "حدّي": 11, "يجب رفضه أو تصعيده": 45}, 23, 1), pool)
 
     # lab 3.4: segregation of duties in the reference
     l34 = ref("lab_3_4.json")

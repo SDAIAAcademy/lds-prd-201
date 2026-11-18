@@ -566,6 +566,7 @@ LLM_API_KEY=""")
            for i, g in enumerate(g10, 2)] + [["المجموع", "", "", "=SUM(D2:D11)"]], [10, 10, 10, 10])
     save(wb, FILES / "ten_outputs.xlsx")
     figures["ten"] = summary(g10)
+    figures["ten_max_words"] = max(len(g["output"].split()) for g in g10)
     (REF / "lab_3_2.json").write_text(json.dumps(
         {"outputs": [{k: g[k] for k in ("case_id", "ticket_id", "variant", "behaviour", "failures", "pass")} for g in g10],
          "summary": figures["ten"]}, ensure_ascii=False, indent=1), encoding="utf-8", newline="\n")
