@@ -87,6 +87,23 @@ def main() -> int:
     same = all(P.standin_reply(r["text"], r["record_codes"].split(), codes) == r["output"] for r in ref_log)
     check("2.3 prototype_log_reference.csv is what the stand-in writes today", same)
 
+    # lab 2.2: the reference prompt keeps the rules slot, and the demo set passes in full with the stand-in
+    v2 = (REF / "prompt_v2.txt").read_text(encoding="utf-8")
+    check("2.2 reference prompt keeps {rules}", "{rules}" in v2)
+    d = figures["demo"]
+    check(f"2.2 stand-in passes {d['pass']} of {d['n']} demo cases", (d["pass"], d["n"]) == (saved["demo"]["pass"], saved["demo"]["n"]), d)
+
+    # lab 2.4: the graded log handed out for the feasibility note matches the reference grading
+    graded = rows(LABS / "prototype" / "prototype_log_graded.csv")
+    l23 = {c["case_id"]: c for c in ref("lab_2_3.json")["cases"]}
+    agree = all((g["pass_fail"] == "اجتياز") == l23[g["case_id"]]["pass"]
+                and g["failure_type"].split() == l23[g["case_id"]]["failures"]
+                and g["language"] == l23[g["case_id"]]["language"] and g["case_type"] == l23[g["case_id"]]["type"]
+                for g in graded) and len(graded) == 30
+    check("2.4 prototype_log_graded.csv matches the reference grading", agree)
+    two = [c for c in l23.values() if c["variant"] == "normal_two"]
+    check(f"2.4 requests with two codes: {sum(c['pass'] for c in two)} of {len(two)} pass", (sum(c["pass"] for c in two), len(two)) == (0, 6))
+
     # lab 3.2: ten outputs
     l32 = ref("lab_3_2.json")
     check(f"3.2 ten outputs, {l32['summary']['pass']} pass the reference criteria", len(l32["outputs"]) == 10)

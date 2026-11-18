@@ -487,6 +487,11 @@ A10 بعض المنسقين يتجاوزون مركز الاتصال ويسأل�
     log_header = ["case_id", "text", "record_codes", "output", "pass_fail", "failure_type", "note"]
     write_csv(PROTO / "prototype_log_reference.csv", log_header,
               [[g["case_id"], g["text"], g["record_codes"], g["output"], "", "", ""] for g in g30])
+    # the same log graded with the reference grader: the starting point of lab 2.4, handed out after lab 2.3
+    write_csv(PROTO / "prototype_log_graded.csv",
+              ["case_id", "language", "case_type", "text", "record_codes", "output", "pass_fail", "failure_type"],
+              [[g["case_id"], g["language"], g["type"], g["text"], g["record_codes"], g["output"],
+                "إخفاق" if g["failures"] else "اجتياز", " ".join(g["failures"])] for g in g30])
 
     def summary(gs):
         s = {"n": len(gs), "pass": sum(g["pass"] for g in gs)}

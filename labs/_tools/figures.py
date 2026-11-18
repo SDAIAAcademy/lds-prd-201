@@ -97,6 +97,15 @@ def compute() -> dict:
             prim[g["failures"][0]] = prim.get(g["failures"][0], 0) + 1
     f["proto30"]["primary_failures"] = prim
 
+    # the five demo cases: prepare_files.py draws them from Arabic returned tickets with one code and no time words
+    demo = []
+    for c in read_csv(LABS / "prototype" / "demo_5.csv"):
+        out = P.standin_reply(c["text"], c["record_codes"].split(), codes)
+        fails = G.grade_reply({"expected_lang": "ar", "codes": c["record_codes"].split(), "behaviour": "B1",
+                               "variant": "normal_one", "escalate_to": ""}, out)
+        demo.append(not fails)
+    f["demo"] = {"n": len(demo), "pass": sum(demo)}
+
     # the capstone stand-in
     cap = json.loads((REF / "capstone.json").read_text(encoding="utf-8"))
     cmeta = {c["case_id"]: c for c in cap["cases"]}
