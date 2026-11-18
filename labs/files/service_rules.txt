@@ -5,7 +5,7 @@
 
 1. أنواع التراخيص والحد الأقصى للمدة
 - T1 · توصيل خدمة لعقار (service connection to a property) · الحد الأقصى 7 أيام
-- T2 · تمديد شبكة (network extension) · الحد الأقصى 30 أيام
+- T2 · تمديد شبكة (network extension) · الحد الأقصى 30 يومًا
 - T3 · قطع عرضي للطريق (road crossing) · الحد الأقصى 5 أيام
 - T4 · إصلاح طارئ (emergency repair) · الحد الأقصى 3 أيام
 

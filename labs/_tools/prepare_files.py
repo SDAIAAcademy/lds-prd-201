@@ -301,7 +301,7 @@ def main():
     figures = {}
 
     # -------- rules and brief
-    types = "\n".join(f"- {k} · {a} ({e}) · الحد الأقصى {d} أيام" for k, (a, e, d) in K.LICENCE_TYPES.items())
+    types = "\n".join(f"- {k} · {a} ({e}) · الحد الأقصى {d} {'أيام' if d <= 10 else 'يومًا'}" for k, (a, e, d) in K.LICENCE_TYPES.items())
     codes = "\n".join(f"- {k} · {a} · {ra} | {e} · {re_}" for k, (a, e, ra, re_) in K.RETURN_CODES.items())
     rules = X.SERVICE_RULES.format(types=types, codes=codes)
     write_text(FILES / "service_rules.txt", rules)
@@ -332,6 +332,7 @@ def main():
     figures["duplicates"] = sum(bool(t["duplicate_of"]) for t in tickets)
     figures["returned_tagged_status"] = sum(t["category"] == "returned" and t["agent_tag"] == "حالة طلب" for t in tickets)
     figures["status_tag_total"] = len(by_tag["حالة طلب"])
+    figures["status_tag_first20_returned"] = sum(t["category"] == "returned" for t in [t for t in tickets if t["agent_tag"] == "حالة طلب"][:20])
     figures["status_tag_really_returned_pct"] = round(100 * figures["returned_tagged_status"] / figures["status_tag_total"])
     figures["complaints_tagged_other"] = sum(t["category"] == "complaint" and t["agent_tag"] == "أخرى" for t in tickets)
     figures["tickets_with_personal_data"] = sum(t["category"] == "complaint" for t in tickets)

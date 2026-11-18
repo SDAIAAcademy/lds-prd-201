@@ -65,7 +65,7 @@ def main() -> int:
         check(f"1.4 category {c}: count, median, total minutes, reopen",
               (v["count"], v["median_minutes"], v["total_minutes"], v["reopen_pct"]) ==
               (s["count"], s["median_minutes"], s["total_minutes"], s["reopen_pct"]), (v, s))
-    for k in ("tickets", "total_minutes", "english_total", "duplicates", "status_tag_total", "returned_tagged_status",
+    for k in ("tickets", "total_minutes", "english_total", "duplicates", "status_tag_total", "returned_tagged_status", "status_tag_first20_returned",
               "complaints_tagged_other"):
         check(f"1.4 {k} = {figures[k]}", figures[k] == saved[k], (figures[k], saved[k]))
 

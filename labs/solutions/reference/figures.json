@@ -175,6 +175,7 @@
  "duplicates": 12,
  "returned_tagged_status": 28,
  "status_tag_total": 144,
+ "status_tag_first20_returned": 6,
  "status_tag_really_returned_pct": 19,
  "complaints_tagged_other": 9,
  "tickets_with_personal_data": 45,

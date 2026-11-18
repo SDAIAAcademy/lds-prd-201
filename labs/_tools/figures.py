@@ -67,6 +67,7 @@ def compute() -> dict:
     f["duplicates"] = sum(bool(k[t["ticket_id"]]["duplicate_of"]) for t in tickets)
     status_tag = [t for t in tickets if t["agent_tag"] == "حالة طلب"]
     f["status_tag_total"] = len(status_tag)
+    f["status_tag_first20_returned"] = sum(k[t["ticket_id"]]["category"] == "returned" for t in status_tag[:20])
     f["returned_tagged_status"] = sum(k[t["ticket_id"]]["category"] == "returned" for t in status_tag)
     f["complaints_tagged_other"] = sum(k[t["ticket_id"]]["category"] == "complaint" and t["agent_tag"] == "أخرى" for t in tickets)
     f["returned_share_of_minutes_pct"] = round(100 * f["by_category"]["returned"]["total_minutes"] / f["total_minutes"])
