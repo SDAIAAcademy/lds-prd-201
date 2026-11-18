@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="lab" data-track="executives">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المختبر 2.4 · مذكرة الجدوى · استكشاف منتجات الذكاء الاصطناعي وإعداد مواصفاتها</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="D2_4_feasibility_note.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="top"><div class="logo"></div><nav><a href="../index.html">صفحة المقرر</a><a href="../slides/day2.html#lab-2-4">العودة إلى الشرائح</a></nav></div>
+<span class="tag">المختبر 2.4</span>
+<h1>مذكرة الجدوى</h1>
+<p>من السجل المرجعي المقيَّم: تكتب مذكرة الجدوى بعدد النجاح وأنواع الإخفاق وتفاوت القدرة وطريقة البناء والقرار المقترح.</p>
+<div class="meta"><span>35 دقيقة</span><span>اليوم 2</span><span>الجلسة 4: طريقة البناء</span></div>
+</div>
+</header>
+<main class="wrap">
+<article class="lab" data-lab="2.4">
+<div class="box goal">
+  <h3>ستخرج من هذا المختبر بـ</h3>
+  <ul>
+    <li>مذكرة جدوى من صفحة: عدد النجاح، والنتيجة لكل شريحة، وأنواع الإخفاق بأمثلتها، وطريقة البناء، والقرار المقترح.</li>
+    <li>جدول يربط كل نوع إخفاق بما يعالجه: الأمر، أو الاسترجاع، أو التكييف، أو قاعدة، أو إنسان.</li>
+  </ul>
+</div>
+
+<h2>ما تحتاجه</h2>
+<div class="files">
+  <a href="prototype/prototype_log_graded.csv" download><b>prototype_log_graded.csv</b><span>السجل المرجعي للحالات الثلاثين بأحكامه: اللغة، ونوع الحالة، والحكم، ونوع الإخفاق. كتبه البديل المبرمج، ويبدأ منه الجميع.</span></a>
+  <a href="files/feasibility_note_template.md" download><b>feasibility_note_template.md</b><span>قالب المذكرة بأقسامه السبعة.</span></a>
+  <a href="files/service_rules.txt" download><b>service_rules.txt</b><span>قواعد الخدمة.</span></a>
+</div>
+<div class="callout tip"><b>ذكاء اصطناعي كامل.</b> يجوز أن يصوغ مساعد المذكرة من أرقامك وأحكامك. الأرقام تُعدّ من السجل، لا يقدّرها المساعد، وأنت تدافع عن القرار.</div>
+
+<h2>الخطوات</h2>
+
+<div class="step">
+  <h3>1 · اقرأ السجل المرجعي المقيَّم <span class="min">5 د</span></h3>
+  <p>افتحه في جدول بيانات. اقرأ خمسة مخرجات أخفقت وخمسة اجتازت. هل توافق على كل حكم؟ علّم ما لا توافق عليه، ولا تغيّره.</p>
+</div>
+
+<div class="step">
+  <h3>2 · اكتب النتيجة لكل شريحة <span class="min">6 د</span></h3>
+  <p>بجدول محوري أو بالعدّ: المجموع، وكل لغة، وكل نوع حالة، ثم شريحة عدد الرموز من عمود <code>record_codes</code>. اكتب كل نتيجة «كذا من كذا»، لا نسبة وحدها.</p>
+</div>
+
+<div class="step">
+  <h3>3 · اربط كل نوع إخفاق بعلاج <span class="min">9 د</span></h3>
+  <table>
+    <tr><th>العلاج</th><th>ما يحله</th></tr>
+    <tr><td>الأمر</td><td>تعليمات يتبعها النموذج: اللغة، وشرح كل رمز، وشكل الرد</td></tr>
+    <tr><td>الاسترجاع</td><td>حقائق تتغير أو تطول: نصوص القواعد والنماذج الحالية تُعطى للنموذج مع كل طلب</td></tr>
+    <tr><td>التكييف</td><td>أسلوب أو شكل ثابت لا يتبعه النموذج بالأمر وحده</td></tr>
+    <tr><td>الشراء</td><td>مهمة عامة لها منتج جاهز يغطي قواعد الخدمة</td></tr>
+    <tr><td>قاعدة أو إنسان</td><td>ما لا يجوز أن يتركه النظام لاحتمال: التصعيد والرفض</td></tr>
+  </table>
+  <p>لكل نوع إخفاق في السجل اكتب علاجه، وحالة من السجل برقمها.</p>
+</div>
+
+<div class="step">
+  <h3>4 · اختر طريقة البناء وما لن يُبنى <span class="min">8 د</span></h3>
+  <p>طريقة واحدة رئيسة وسبب في سطرين. ثم اكتب ما يخرج من نطاق الميزة: أي نوع حالة لا تكتب له مسودة، ويذهب إلى قاعدة أو إلى موظف؟</p>
+</div>
+
+<div class="step">
+  <h3>5 · اكتب القرار المقترح <span class="min">7 د</span></h3>
+  <p>واحد من ثلاثة: نكمل إلى المواصفات، أو نكمل بنطاق أضيق، أو نتوقف. وسبب في سطرين بأرقام السجل. واذكر في أول المذكرة مصدر الإجابات: البديل المبرمج، أو النموذج باسمه وتاريخ التشغيل.</p>
+</div>
+
+<div class="step stretch">
+  <h3>✱ تمرين إضافي</h3>
+  <p>اكتب الشرط الذي يجعلك تغير قرارك لو أعدت التشغيل بنموذج آخر.</p>
+</div>
+
+<h2>أسئلة تحقق</h2>
+<ol class="checks">
+  <li>هل في المذكرة عدد النجاح وأنواع الإخفاق بأمثلة برقم الحالة؟</li>
+  <li>هل لكل نوع إخفاق علاج، وهل التصعيد والرفض في يد قاعدة أو إنسان؟</li>
+  <li>هل يقول القرار ما لن يُبنى؟</li>
+</ol>
+
+<details class="instructor">
+  <summary>للمدرّب</summary>
+  <ul>
+    <li>المرجع في <code>labs/solutions/D2_4_feasibility_note.md</code>. وزّع <code>prototype_log_graded.csv</code> بعد نقاش 2.3، فهو أحكام المرجع.</li>
+    <li>الخطأ الشائع: اختيار التكييف لإضافة معلومة، مثل رسوم أو قواعد. التكييف يغيّر الأسلوب والشكل؛ والحقائق تأتي بالاسترجاع أو في الأمر.</li>
+    <li>القرار المرجعي: نكمل بنطاق أضيق. المسودات للطلبات المعادة، وحالات الخطر والطارئ وطلب الاعتماد أو الإعفاء أو بيانات طرف آخر تذهب إلى موظف بقاعدة قبل النموذج.</li>
+    <li>المذكرة هي الناتج المقيَّم (ست نقاط، في الحل المرجعي)؛ وسجل 2.3 يُفحص للأصالة دون درجة.</li>
+  </ul>
+</details>
+</article>
+<nav class="pager"><a href="D2_3_thirty_cases.html" rel="prev">→ المختبر السابق</a><a href="D3_1_behaviour_spec.html" rel="next">المختبر التالي ←</a></nav>
+</main>
+<footer><div class="wrap">أكاديمية سدايا · مسار التنفيذيين والقادة · استكشاف منتجات الذكاء الاصطناعي وإعداد مواصفاتها<br><span class="muted">إصدار المقرر 2027.1.0 · المحرّك 1.0.0 · بُني في ⁦2026-11-18⁩ · الإيداع 2672fae</span></div></footer>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-18T06:35:29Z","version":"2027.1.0","commit":"2672fae"},"course":{"id":"lds-prd-201","code":"LDS-PRD-201","title":"استكشاف منتجات الذكاء الاصطناعي وإعداد مواصفاتها","track":"executives","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/lds-prd-201/","repo":"SDAIAAcademy/lds-prd-201","home":"../index.html"},"lab":{"id":"2.4","title":"مذكرة الجدوى","summary":"من السجل المرجعي المقيَّم: تكتب مذكرة الجدوى بعدد النجاح وأنواع الإخفاق وتفاوت القدرة وطريقة البناء والقرار المقترح.","minutes":35,"day":2,"unit":"اليوم 2","session":4,"deck":"../slides/day2.html#lab-2-4","prev":"D2_3_thirty_cases.html","next":"D3_1_behaviour_spec.html","alt":{}},"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":null,"llms":"../llms.txt"},"tasks":[],"tools":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>

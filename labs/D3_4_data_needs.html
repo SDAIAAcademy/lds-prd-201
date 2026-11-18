@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="lab" data-track="executives">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المختبر 3.4 · بيان الاحتياجات من البيانات · استكشاف منتجات الذكاء الاصطناعي وإعداد مواصفاتها</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="D3_4_data_needs.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="top"><div class="logo"></div><nav><a href="../index.html">صفحة المقرر</a><a href="../slides/day3.html#lab-3-4">العودة إلى الشرائح</a></nav></div>
+<span class="tag">المختبر 3.4</span>
+<h1>بيان الاحتياجات من البيانات</h1>
+<p>تعمل على سجل المصادر التسعة: الغرض والتصنيف والبيانات الشخصية والمالك ومن يطلب ومن يوافق والمدة، ثم تكتب بيان الاحتياجات وتقرأ موجز المشروع الختامي.</p>
+<div class="meta"><span>35 دقيقة</span><span>اليوم 3</span><span>الجلسة 4: التصنيف والبيانات الشخصية والملاك</span></div>
+</div>
+</header>
+<main class="wrap">
+<article class="lab" data-lab="3.4">
+<div class="box goal">
+  <h3>ستخرج من هذا المختبر بـ</h3>
+  <ul>
+    <li>سجل المصادر التسعة مكتملًا: الغرض، وهل يجوز إرساله إلى أداة توليدية مستضافة، والفجوة، ومن يطلب ومن يوافق.</li>
+    <li>بيان الاحتياجات من البيانات في صفحة، بالمالكين والمدد والفجوات وما لا نحتاجه الآن.</li>
+    <li>قراءة أولى لموجز المشروع الختامي.</li>
+  </ul>
+</div>
+
+<h2>ما تحتاجه</h2>
+<div class="files">
+  <a href="files/data_sources.xlsx" download><b>data_sources.xlsx</b><span>تسعة مصادر (S1 إلى S9) بمالكها وتصنيفها المسجل وبياناتها الشخصية ومدة الحصول عليها، وأربعة أعمدة لك.</span></a>
+  <a href="files/data_needs_template.md" download><b>data_needs_template.md</b><span>قالب البيان.</span></a>
+  <a href="files/capstone/capstone_brief.txt" download><b>capstone_brief.txt</b><span>موجز المشروع الختامي: ميزة فرز شكاوى السكان وتلخيصها للمفتش.</span></a>
+</div>
+<div class="callout note"><b>ذكاء اصطناعي مرشد.</b> المساعد يسألك عن كل حكم، ولا يحكم عنك. لا تلصق في أي أداة شيئًا من المصادر نفسها: السجل وصف لها، لا محتواها.</div>
+<div class="prompt" data-tool="مساعد محادثة">أكتب بيان احتياجات من البيانات لميزة تكتب مسودات ردود. سأعطيك وصف مصدر واحد وحكمي عليه. لا تحكم عني. اسألني: لأي غرض نحتاجه (التأسيس، التقييم، التكييف)؟ هل نحتاجه كله أم حقلًا منه؟ ما تصنيفه، ومن صنّفه؟ من يطلبه ومن يوافق، وهل هما شخصان مختلفان؟ المصدر وحكمي: <span class="ph">الوصف والحكم</span></div>
+
+<h2>الخطوات</h2>
+
+<div class="step">
+  <h3>1 · اقرأ سجل المصادر التسعة <span class="min">4 د</span></h3>
+  <p>اقرأ كل صف: من يملكه، وما تصنيفه المسجل، وهل فيه بيانات شخصية، وكم يستغرق الحصول عليه. علّم ما يبدو ناقصًا.</p>
+</div>
+
+<div class="step">
+  <h3>2 · حدد غرض كل مصدر <span class="min">6 د</span></h3>
+  <table>
+    <tr><th>الغرض</th><th>معناه في هذه الميزة</th></tr>
+    <tr><td>التأسيس</td><td>يُعطى للنموذج مع كل طلب ليكتب منه: القواعد، والرموز</td></tr>
+    <tr><td>التقييم</td><td>أمثلة نقيس عليها المسودات قبل الإطلاق وبعده</td></tr>
+    <tr><td>التكييف</td><td>أمثلة يُعاد بها تدريب النموذج، إن احتجنا ذلك أصلًا</td></tr>
+    <tr><td>غير لازم الآن</td><td>لا يحتاجه الإصدار الأول، مهما بدا مفيدًا</td></tr>
+  </table>
+</div>
+
+<div class="step">
+  <h3>3 · احكم على التصنيف والإرسال إلى أداة مستضافة <span class="min">8 د</span></h3>
+  <p>القاعدة كما في مبادئ الذكاء الاصطناعي التوليدي للجهات الحكومية: لا يُدخل في الأداة ما صُنِّف «مقيد» فأعلى، ويقتصر استخدامها على ما صُنِّف «عام». مصدر غير مصنف لا يُرسل حتى يُصنف. وإن كانت الميزة تحتاج حقلًا واحدًا من مصدر، فاكتب ذلك.</p>
+</div>
+
+<div class="step">
+  <h3>4 · اكتب الفجوات ومن يطلب ومن يوافق <span class="min">7 د</span></h3>
+  <p>لكل فجوة: ما الناقص، ومن يطلب، ومن يوافق، وكم يستغرق. قاعدة الحالة: يطلب مدير المنتج، ويوافق مالك المصدر، وتعتمد مراجِعة التصنيف في مكتب إدارة البيانات بالأمانة المستوى. لا يوافق أحد على طلب قدّمه.</p>
+</div>
+
+<div class="step">
+  <h3>5 · اكتب بيان الاحتياجات <span class="min">6 د</span></h3>
+  <p>في القالب: جدول المصادر اللازمة، والفجوات، وما لا نحتاجه الآن ولماذا، وأثر الفجوات على الخطة في سطرين.</p>
+</div>
+
+<div class="step">
+  <h3>6 · اقرأ موجز المشروع الختامي <span class="min">4 د</span></h3>
+  <p>اقرأ <code>capstone_brief.txt</code>، واكتب سؤالًا واحدًا عن الميزة الثانية تريد أن تسأله غدًا قبل الصياغة.</p>
+</div>
+
+<div class="step stretch">
+  <h3>✱ تمرين إضافي</h3>
+  <p>اكتب كيف يتغير بيانك لو صُنفت مجموعة النموذج الأولي «مقيدة».</p>
+</div>
+
+<h2>أسئلة تحقق</h2>
+<ol class="checks">
+  <li>كم مصدرًا يجوز إرساله إلى أداة توليدية مستضافة كما هو؟</li>
+  <li>أي مصدر لا مالك له، وأيها غير مصنف؟</li>
+  <li>هل يوافق في بيانك أحد على طلب قدّمه هو؟</li>
+</ol>
+
+<details class="instructor">
+  <summary>للمدرّب</summary>
+  <ul>
+    <li>المرجع في <code>labs/solutions/D3_4_data_needs.md</code> و<code>labs/solutions/reference/lab_3_4.json</code>.</li>
+    <li>ثلاثة مصادر فقط تُرسل كما هي (S1 وS2 وS5). المصدر S4 غير مصنف، وS6 بلا مالك، وS3 تحتاج الميزة منه رمز الإعادة وحده. لا تذكر هذا قبل الخطوة 3.</li>
+    <li>فخ مقصود: S8 (خرائط الشبكات، «سري») يطلبه الفريق الهندسي «للاحتياط». غير لازم للإصدار الأول.</li>
+    <li>التصنيف «عام» للمجموعة S5 وخطوات اعتماده قاعدة الأمانة الافتراضية؛ والحكم بعدم إدخال «مقيد» فأعلى من المبادئ نفسها.</li>
+    <li>هذا المختبر مقيَّم مع 3.3.</li>
+  </ul>
+</details>
+</article>
+<nav class="pager"><a href="D3_3_eval_set.html" rel="prev">→ المختبر السابق</a></nav>
+</main>
+<footer><div class="wrap">أكاديمية سدايا · مسار التنفيذيين والقادة · استكشاف منتجات الذكاء الاصطناعي وإعداد مواصفاتها<br><span class="muted">إصدار المقرر 2027.1.0 · المحرّك 1.0.0 · بُني في ⁦2026-11-18⁩ · الإيداع 2672fae</span></div></footer>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-18T06:35:29Z","version":"2027.1.0","commit":"2672fae"},"course":{"id":"lds-prd-201","code":"LDS-PRD-201","title":"استكشاف منتجات الذكاء الاصطناعي وإعداد مواصفاتها","track":"executives","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/lds-prd-201/","repo":"SDAIAAcademy/lds-prd-201","home":"../index.html"},"lab":{"id":"3.4","title":"بيان الاحتياجات من البيانات","summary":"تعمل على سجل المصادر التسعة: الغرض والتصنيف والبيانات الشخصية والمالك ومن يطلب ومن يوافق والمدة، ثم تكتب بيان الاحتياجات وتقرأ موجز المشروع الختامي.","minutes":35,"day":3,"unit":"اليوم 3","session":4,"deck":"../slides/day3.html#lab-3-4","prev":"D3_3_eval_set.html","next":null,"alt":{}},"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":null,"llms":"../llms.txt"},"tasks":[],"tools":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>

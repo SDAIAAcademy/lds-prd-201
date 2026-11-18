@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="lab" data-track="executives">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المختبر 2.2 · أمر أول وخمس حالات · استكشاف منتجات الذكاء الاصطناعي وإعداد مواصفاتها</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="D2_2_first_prompt.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="top"><div class="logo"></div><nav><a href="../index.html">صفحة المقرر</a><a href="../slides/day2.html#lab-2-2">العودة إلى الشرائح</a></nav></div>
+<span class="tag">المختبر 2.2</span>
+<h1>أمر أول وخمس حالات</h1>
+<p>تحسّن أمر البداية، وتشغّله على حالات العرض الخمس بالسكربت أو بمساعد محادثة، وتحكم على كل مخرج.</p>
+<div class="meta"><span>35 دقيقة</span><span>اليوم 2</span><span>الجلسة 2: النموذج الأولي على مستوى الأوامر</span></div>
+</div>
+</header>
+<main class="wrap">
+<article class="lab" data-lab="2.2">
+<div class="box goal">
+  <h3>ستخرج من هذا المختبر بـ</h3>
+  <ul>
+    <li>أمر محسَّن لمسودات الرد على الطلبات المعادة، فيه الدور والقواعد والمطلوب وشكل الإخراج.</li>
+    <li>سجل تشغيل لخمس حالات عرض، لكل حالة مخرجها وحكمك عليه.</li>
+    <li>سؤال الجدوى الذي سيجيب عنه النموذج الأولي، في سطر.</li>
+  </ul>
+</div>
+
+<h2>ما تحتاجه</h2>
+<div class="files">
+  <a href="prototype/run_prototype.py" download><b>run_prototype.py</b><span>سكربت واحد بمكتبة بايثون القياسية: يشغّل أمرًا على ملف حالات ويكتب سجلًا.</span></a>
+  <a href="prototype/prompt_starter.txt" download><b>prompt_starter.txt</b><span>أمر البداية، و<code>{rules}</code> فيه تُستبدل بقواعد الخدمة عند التشغيل.</span></a>
+  <a href="prototype/demo_5.csv" download><b>demo_5.csv</b><span>خمس حالات عرض اختارها زميل من الفريق.</span></a>
+  <a href="files/service_rules.txt" download><b>service_rules.txt</b><span>قواعد الخدمة: رموز الإعادة ومعانيها وما يلزم، وقواعد الرد والتصعيد.</span></a>
+  <a href="prototype/.env.example" download><b>.env.example</b><span>أسماء الإعدادات الثلاثة، لمن يستعمل مفتاحًا.</span></a>
+</div>
+<div class="callout tip"><b>ذكاء اصطناعي كامل.</b> يكتب النموذج المسودات، ويجوز أن يساعدك مساعد في تحسين الأمر. الحكم على كل مخرج حكمك.</div>
+<div class="callout warn"><b>ما يصل إلى الأداة.</b> ملفات الحالات حُذف منها كل ما يعرّف بشخص (الأسماء والعناوين وأرقام التراخيص)، وصنّفتها الأمانة «عام» بقاعدتها الخاصة في دراسة الحالة. هذا وحده ما يجوز إرساله إلى أداة توليدية مستضافة. لا تلصق تذكرة من <code>tickets.xlsx</code> في أي أداة.</div>
+
+<h2>الخطوات</h2>
+
+<div class="step">
+  <h3>1 · اختر طريق التشغيل وجهّزه <span class="min">6 د</span></h3>
+  <table>
+    <tr><th>الطريق</th><th>ما تفعله</th></tr>
+    <tr><td>السكربت</td><td>في مجلد <code>labs/prototype</code>: <code>uv run run_prototype.py --cases demo_5.csv --label demo</code>. بلا مفتاح يجيب البديل المبرمج ويقول ذلك في أول سطر.</td></tr>
+    <tr><td>Colab</td><td>ارفع مجلد <code>labs</code> كما هو، ثم في خلية: <code>!cd labs/prototype &amp;&amp; python run_prototype.py --cases demo_5.csv --label demo</code></td></tr>
+    <tr><td>مساعد محادثة</td><td>الصق الأمر بعد وضع نص <code>service_rules.txt</code> مكان <code>{rules}</code>، ثم حالة واحدة في كل رسالة، وانسخ كل مخرج إلى السجل.</td></tr>
+  </table>
+  <p>للمفتاح: انسخ <code>.env.example</code> باسم <code>.env</code> في المجلد نفسه واكتب مفتاحك بعد <code>LLM_API_KEY=</code>، أو اضبط الأسماء الثلاثة في البيئة. لا ترفع <code>.env</code> إلى أي مستودع.</p>
+</div>
+
+<div class="step">
+  <h3>2 · اقرأ أمر البداية وقواعد الخدمة <span class="min">5 د</span></h3>
+  <p>اقرأ <code>prompt_starter.txt</code> سطرًا سطرًا. ما الذي لا يقوله؟ هل يقول بأي لغة يُكتب الرد؟ وماذا يفعل إن كان في الطلب أكثر من رمز؟ وما الذي لا يجوز وعد المتقدم به؟ ومتى يُصعَّد؟</p>
+</div>
+
+<div class="step">
+  <h3>3 · حسّن الأمر <span class="min">10 د</span></h3>
+  <p>احفظ نسخة باسم <code>prompt_v2.txt</code> في مجلد السكربت نفسه، فيها أربعة أجزاء: الدور، والقواعد (اترك <code>{rules}</code> كما هو)، والمطلوب بحالاته، وشكل الإخراج. كل قاعدة تضيفها جملة يمكن أن يُحكم بها على مخرج: اجتاز أو أخفق.</p>
+</div>
+
+<div class="step">
+  <h3>4 · شغّل الحالات الخمس <span class="min">6 د</span></h3>
+  <p><code>uv run run_prototype.py --cases demo_5.csv --prompt prompt_v2.txt --label demo_v2</code>. السجل في <code>runs/demo_v2.csv</code>، ومعه ملف <code>.json</code> يذكر مصدر الإجابات والتاريخ.</p>
+  <p><b>دون مفتاح:</b> البديل المبرمج لا يقرأ الأمر، فمخرجاته بأمرك المحسَّن هي نفسها بأمر البداية. أثر تحسين الأمر لا يظهر إلا مع نموذج؛ وتمرينك هنا كتابة الأمر والحكم والسجل.</p>
+</div>
+
+<div class="step">
+  <h3>5 · احكم على كل مخرج وسجّل حكمك <span class="min">8 د</span></h3>
+  <p>املأ في السجل «اجتياز أو إخفاق» وملاحظة من سطر. ثم اكتب سؤال الجدوى: ما الذي تريد أن تعرفه من النموذج الأولي، ولا تعرفه من هذه الحالات الخمس؟</p>
+</div>
+
+<div class="step stretch">
+  <h3>✱ تمرين إضافي</h3>
+  <p>غيّر جملة واحدة في الأمر وأعد التشغيل، ثم اكتب ما تغير في المخرجات.</p>
+</div>
+
+<h2>أسئلة تحقق</h2>
+<ol class="checks">
+  <li>هل في أمرك قاعدة للغة الرد، وللطلب ذي الرمزين، وللوعد بموعد، وللتصعيد؟</li>
+  <li>كم من الحالات الخمس اجتاز؟ وماذا تقول الحالات الخمس عن الثلاثين؟</li>
+  <li>من أين جاءت الإجابات في سجلك: نموذج باسمه، أم البديل المبرمج؟</li>
+</ol>
+
+<details class="instructor">
+  <summary>للمدرّب</summary>
+  <ul>
+    <li>المرجع في <code>labs/solutions/D2_2_first_prompt.md</code>.</li>
+    <li>حالات العرض الخمس كلها عربية برمز واحد ومعتادة، وفي سجل البديل المبرمج تجتاز الخمس كلها. هذا هو الدرس: نتيجة 5 من 5 على حالات اختيرت لتُعرض لا تقول شيئًا عن الثلاثين. لا تكشف تركيبة الحالات قبل الخطوة 5.</li>
+    <li>البديل المبرمج لا يقرأ الأمر: تغيير الأمر لا يغير مخرجاته. من يعمل دون مفتاح يتدرب على كتابة الأمر والحكم والسجل، ويرى أثر الأمر في الثلاثين حين يشغّلها بنموذج. قل ذلك صراحة.</li>
+    <li>حدود الخطة المجانية في المثال (OpenRouter، نماذج <code>:free</code>): 20 طلبًا في الدقيقة، و50 في اليوم لمن اشترى أقل من 10 أرصدة (credits) منذ فتح حسابه، و1000 لمن اشترى 10 فأكثر. السكربت ينتظر بين الطلبات، ويحفظ كل إجابة في <code>runs/cache.json</code> فلا تُطلب الحالة نفسها بالأمر نفسه مرتين. اليوم الثاني كله نحو 40 طلبًا للمشارك: 5 بأمر البداية، و5 بالأمر المحسَّن، و30 للحالات الثلاثين؛ والتمارين الإضافية تأخذ من العشرة الباقية. إعادة تشغيل الثلاثين بأمر آخر لا تتسع لها الخطة المجانية في اليوم نفسه.</li>
+    <li>إن رفضت الخدمة المفتاح (HTTP 401) يتوقف السكربت برسالة من سطر؛ أكمل بـ <code>--standin</code> أو بطريق مساعد المحادثة.</li>
+  </ul>
+</details>
+</article>
+<nav class="pager"><a href="D2_1_opportunity_map.html" rel="prev">→ المختبر السابق</a><a href="D2_3_thirty_cases.html" rel="next">المختبر التالي ←</a></nav>
+</main>
+<footer><div class="wrap">أكاديمية سدايا · مسار التنفيذيين والقادة · استكشاف منتجات الذكاء الاصطناعي وإعداد مواصفاتها<br><span class="muted">إصدار المقرر 2027.1.0 · المحرّك 1.0.0 · بُني في ⁦2026-11-18⁩ · الإيداع 2672fae</span></div></footer>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-18T06:35:29Z","version":"2027.1.0","commit":"2672fae"},"course":{"id":"lds-prd-201","code":"LDS-PRD-201","title":"استكشاف منتجات الذكاء الاصطناعي وإعداد مواصفاتها","track":"executives","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/lds-prd-201/","repo":"SDAIAAcademy/lds-prd-201","home":"../index.html"},"lab":{"id":"2.2","title":"أمر أول وخمس حالات","summary":"تحسّن أمر البداية، وتشغّله على حالات العرض الخمس بالسكربت أو بمساعد محادثة، وتحكم على كل مخرج.","minutes":35,"day":2,"unit":"اليوم 2","session":2,"deck":"../slides/day2.html#lab-2-2","prev":"D2_1_opportunity_map.html","next":"D2_3_thirty_cases.html","alt":{}},"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":null,"llms":"../llms.txt"},"tasks":[],"tools":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>

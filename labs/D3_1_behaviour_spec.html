@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="lab" data-track="executives">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المختبر 3.1 · مواصفات السلوك · استكشاف منتجات الذكاء الاصطناعي وإعداد مواصفاتها</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="D3_1_behaviour_spec.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="top"><div class="logo"></div><nav><a href="../index.html">صفحة المقرر</a><a href="../slides/day3.html#lab-3-1">العودة إلى الشرائح</a></nav></div>
+<span class="tag">المختبر 3.1</span>
+<h1>مواصفات السلوك</h1>
+<p>تكتب في القالب نطاق الميزة وقواعد سلوكها ورفضها وتصعيدها من قواعد الخدمة، وتختبرها على ثماني رسائل حدّية.</p>
+<div class="meta"><span>35 دقيقة</span><span>اليوم 3</span><span>الجلسة 1: قواعد السلوك والرفض والتصعيد</span></div>
+</div>
+</header>
+<main class="wrap">
+<article class="lab" data-lab="3.1">
+<div class="box goal">
+  <h3>ستخرج من هذا المختبر بـ</h3>
+  <ul>
+    <li>مواصفات سلوك لمسودات الرد على الطلبات المعادة: النطاق وما خارجه، وقواعد السلوك، وقواعد الرفض والتصعيد.</li>
+    <li>لكل قاعدة رفض أو تصعيد محفّز ووجهة، والضرر الذي تمنعه.</li>
+    <li>اختبار للمواصفات على ثماني رسائل: أي قاعدة تنطبق على كل رسالة.</li>
+  </ul>
+</div>
+
+<h2>ما تحتاجه</h2>
+<div class="files">
+  <a href="files/spec_template.md" download><b>spec_template.md</b><span>قالب المواصفات بأقسامه الخمسة. القسم الخامس للمختبر التالي.</span></a>
+  <a href="files/service_rules.txt" download><b>service_rules.txt</b><span>قواعد الخدمة: ما لا يدخل في نطاق الرد، وقواعد الرفض والتصعيد والرد.</span></a>
+  <a href="prototype/cases_30.csv" download><b>cases_30.csv</b><span>الحالات الثلاثون؛ الرسائل الثماني للاختبار منها.</span></a>
+</div>
+<div class="callout note"><b>ذكاء اصطناعي مرشد.</b> المساعد يسألك عن المحفّز والوجهة والضرر لكل قاعدة، ولا يكتب القواعد عنك.</div>
+<div class="prompt" data-tool="مساعد محادثة">أنا مدير منتج أكتب مواصفات سلوك لميزة تكتب مسودات ردود يراجعها موظف. سأعطيك قاعدة واحدة في كل مرة. لا تعد كتابتها. اسألني: ما الذي يحفّزها بالضبط، وكيف يعرف من يقرأ الرسالة أنه وقع؟ إلى أين تذهب الرسالة، وخلال كم؟ ما الضرر على الناس إن لم تُطبق؟ وأي رسالة قد تنطبق عليها قاعدتان؟ القاعدة: <span class="ph">القاعدة</span></div>
+
+<h2>الخطوات</h2>
+
+<div class="step">
+  <h3>1 · اقرأ القالب وقواعد الخدمة <span class="min">4 د</span></h3>
+  <p>اقرأ الأقسام 3 إلى 6 في <code>service_rules.txt</code>، ومذكرة الجدوى التي كتبتها أمس: ما الذي قررت ألا يُبنى؟</p>
+</div>
+
+<div class="step">
+  <h3>2 · اكتب النطاق وما خارجه <span class="min">6 د</span></h3>
+  <p>داخل النطاق: أنواع الرسائل التي تكتب لها الميزة مسودة. خارج النطاق: كل نوع آخر، ولكل منه قناة يوجَّه إليها.</p>
+</div>
+
+<div class="step">
+  <h3>3 · اكتب قواعد السلوك <span class="min">8 د</span></h3>
+  <p>كل قاعدة سطر «إذا … فإن الميزة …». لغة الرد، وشرح كل رمز، والرسالة بلا رمز، والرسالة الغاضبة. كل قاعدة يمكن أن يُحكم بها على مخرج.</p>
+</div>
+
+<div class="step">
+  <h3>4 · اكتب قواعد الرفض والتصعيد <span class="min">9 د</span></h3>
+  <p>الرفض: ما لا تفعله الميزة ولو طُلب منها، وبأي عبارة. التصعيد: المحفّز، وإلى من، وخلال كم. اكتب بجانب كل قاعدة الضرر الذي تمنعه، على من؟</p>
+</div>
+
+<div class="step">
+  <h3>5 · اختبرها على الرسائل الثماني <span class="min">8 د</span></h3>
+  <p>من <code>cases_30.csv</code>: P04 وP08 وP13 وP16 وP19 وP21 وP22 وP27. لكل رسالة اكتب القاعدة التي تنطبق عليها برقمها. رسالة لا تنطبق عليها قاعدة، أو تنطبق عليها قاعدتان متعارضتان، تعني أن المواصفات تحتاج قاعدة.</p>
+</div>
+
+<div class="step stretch">
+  <h3>✱ تمرين إضافي</h3>
+  <p>اكتب قاعدة تصعيد ثانية لحالة لم تذكرها قواعد الخدمة، وسمِّ من يجب أن يعتمدها.</p>
+</div>
+
+<h2>أسئلة تحقق</h2>
+<ol class="checks">
+  <li>هل لكل نوع خارج النطاق قناة؟</li>
+  <li>هل لكل قاعدة رفض أو تصعيد محفّز ووجهة وضرر؟</li>
+  <li>هل انطبقت على كل رسالة من الثماني قاعدة واحدة واضحة؟</li>
+</ol>
+
+<details class="instructor">
+  <summary>للمدرّب</summary>
+  <ul>
+    <li>المرجع في <code>labs/solutions/D3_1_behaviour_spec.md</code>.</li>
+    <li>الخلط الشائع: الرفض والتصعيد. الرفض «لا نفعل هذا» ويبقى الرد مع المتقدم؛ التصعيد «ليس قرارنا» وتذهب الرسالة إلى إنسان بعينه. P16 وP22 تصعيد إلى فريق التفتيش ولو لم تُذكر كلمة «خطر»؛ وP13 وP27 رفض.</li>
+    <li>الضرر يُسمّى على الناس أولًا: طفل قرب حفرة بلا حواجز، ومتقدم يُوعد بموعد فيرتب فرقته عليه، وصاحب ترخيص آخر تُكشف بياناته.</li>
+    <li>هذا المختبر لا يُقيَّم وحده؛ والمختبر 3.2 يبدأ من مسودة زميل، لا من مواصفاتك.</li>
+  </ul>
+</details>
+</article>
+<nav class="pager"><a href="D2_4_feasibility_note.html" rel="prev">→ المختبر السابق</a><a href="D3_2_criteria.html" rel="next">المختبر التالي ←</a></nav>
+</main>
+<footer><div class="wrap">أكاديمية سدايا · مسار التنفيذيين والقادة · استكشاف منتجات الذكاء الاصطناعي وإعداد مواصفاتها<br><span class="muted">إصدار المقرر 2027.1.0 · المحرّك 1.0.0 · بُني في ⁦2026-11-18⁩ · الإيداع 2672fae</span></div></footer>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-18T06:35:29Z","version":"2027.1.0","commit":"2672fae"},"course":{"id":"lds-prd-201","code":"LDS-PRD-201","title":"استكشاف منتجات الذكاء الاصطناعي وإعداد مواصفاتها","track":"executives","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/lds-prd-201/","repo":"SDAIAAcademy/lds-prd-201","home":"../index.html"},"lab":{"id":"3.1","title":"مواصفات السلوك","summary":"تكتب في القالب نطاق الميزة وقواعد سلوكها ورفضها وتصعيدها من قواعد الخدمة، وتختبرها على ثماني رسائل حدّية.","minutes":35,"day":3,"unit":"اليوم 3","session":1,"deck":"../slides/day3.html#lab-3-1","prev":"D2_4_feasibility_note.html","next":"D3_2_criteria.html","alt":{}},"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":null,"llms":"../llms.txt"},"tasks":[],"tools":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>

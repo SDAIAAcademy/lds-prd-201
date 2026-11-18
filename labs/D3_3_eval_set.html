@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="lab" data-track="executives">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المختبر 3.3 · خمسون مثالًا موسومًا · استكشاف منتجات الذكاء الاصطناعي وإعداد مواصفاتها</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="D3_3_eval_set.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="top"><div class="logo"></div><nav><a href="../index.html">صفحة المقرر</a><a href="../slides/day3.html#lab-3-3">العودة إلى الشرائح</a></nav></div>
+<span class="tag">المختبر 3.3</span>
+<h1>خمسون مثالًا موسومًا</h1>
+<p>تختار من ثمانين رسالة مرشحة خمسين مثالًا، وتوسم كلًّا منها بالنوع والسلوك المتوقع، حتى تبلغ أهداف التغطية في ورقة العد.</p>
+<div class="meta"><span>35 دقيقة</span><span>اليوم 3</span><span>الجلسة 3: مجموعة التقييم الأولى</span></div>
+</div>
+</header>
+<main class="wrap">
+<article class="lab" data-lab="3.3">
+<div class="box goal">
+  <h3>ستخرج من هذا المختبر بـ</h3>
+  <ul>
+    <li>خمسون مثالًا مختارًا من ثمانين رسالة مرشحة، لكل منها نوع وسلوك متوقع.</li>
+    <li>ورقة تغطية تبلغ كل أهدافها، أو تقول أي هدف لم يُبلغ ولماذا.</li>
+    <li>سطر عن الفجوة التي بقيت في المجموعة.</li>
+  </ul>
+</div>
+
+<h2>ما تحتاجه</h2>
+<div class="files">
+  <a href="files/eval_candidates.xlsx" download><b>eval_candidates.xlsx</b><span>ثمانون رسالة حُذف منها ما يعرّف بشخص، وورقة «التغطية» تعدّ وحدها، وورقة «السلوكيات» بالسلوكيات الخمسة.</span></a>
+  <a href="files/service_rules.txt" download><b>service_rules.txt</b><span>قواعد الخدمة.</span></a>
+</div>
+<div class="callout note"><b>ذكاء اصطناعي مرشد.</b> الوسم وسمك: هذه الورقة يفحصها المقيِّم. يجوز أن تسأل مساعدًا عن حالة حيرتك، بالأمر أدناه، على ألا يضع لك الوسم.</div>
+<div class="prompt" data-tool="مساعد محادثة">أوسم رسالة لمجموعة تقييم. الأنواع: معتاد، حدّي، يجب رفضه أو تصعيده. السلوكيات: B1 شرح الرموز، B2 شرح وطلب المعلومة الناقصة، B3 رفض وتوجيه إلى القناة، B4 تصعيد إلى فريق بشري، B5 رفض الإفصاح عن بيانات طرف آخر. لا تقل لي الوسم. اسألني: ماذا يطلب المرسل؟ هل في الرسالة ما يمس السلامة أو حق جهة أخرى؟ هل الطلب من صلاحية الرد؟ الرسالة: <span class="ph">الرسالة</span>. وسمي: <span class="ph">النوع والسلوك</span></div>
+
+<h2>الخطوات</h2>
+
+<div class="step">
+  <h3>1 · اقرأ أهداف التغطية والسلوكيات الخمسة <span class="min">4 د</span></h3>
+  <table>
+    <tr><th>البند</th><th>الهدف</th></tr>
+    <tr><td>المجموع</td><td>50</td></tr>
+    <tr><td>معتاد</td><td>20 على الأقل</td></tr>
+    <tr><td>حدّي</td><td>10 على الأقل</td></tr>
+    <tr><td>يجب رفضه أو تصعيده</td><td>10 على الأقل</td></tr>
+    <tr><td>بالإنجليزية</td><td>12 على الأقل</td></tr>
+    <tr><td>كل رمز من R1 إلى R8</td><td>مرتان على الأقل</td></tr>
+    <tr><td>كل سلوك من B1 إلى B5</td><td>مرة على الأقل</td></tr>
+  </table>
+  <p>رسالة خارج نطاق الميزة (حالة طلب، أو مخالفة، أو شكوى ساكن) نوعها «يجب رفضه أو تصعيده»: سلوكها المتوقع أن توجَّه أو تُصعَّد.</p>
+</div>
+
+<div class="step">
+  <h3>2 · وسّم المرشحين 1 إلى 40 <span class="min">12 د</span></h3>
+  <p>لكل رسالة: النوع، والسلوك المتوقع من القائمة. اكتب في الملاحظة ما حيرك.</p>
+</div>
+
+<div class="step">
+  <h3>3 · وسّم المرشحين 41 إلى 80 <span class="min">10 د</span></h3>
+  <p>بالطريقة نفسها. إن تأخرت، فوسّم ما يسد أهداف التغطية أولًا: الحدّي والإنجليزي والرموز النادرة.</p>
+</div>
+
+<div class="step">
+  <h3>4 · اختر الخمسين وراجع العد <span class="min">6 د</span></h3>
+  <p>اكتب «نعم» في عمود «مختار؟» لخمسين رسالة، وراقب ورقة «التغطية». بند لا يبلغ هدفه: أضف إليه وأزل من بند فاض.</p>
+</div>
+
+<div class="step">
+  <h3>5 · اكتب الفجوة التي بقيت <span class="min">3 د</span></h3>
+  <p>أي بند بلغ هدفه بالكاد، أو لم يبلغه لأن المرشحين لا يكفون؟ هذه الفجوة تدخل بيان البيانات في المختبر التالي.</p>
+</div>
+
+<div class="step stretch">
+  <h3>✱ تمرين إضافي</h3>
+  <p>اكتب ثلاثة أمثلة جديدة تسد أضعف بند في تغطيتك.</p>
+</div>
+
+<h2>أسئلة تحقق</h2>
+<ol class="checks">
+  <li>هل بلغت ورقة «التغطية» كل أهدافها؟</li>
+  <li>أي سلوك أقل تمثيلًا في مجموعتك، وكم مرة؟</li>
+  <li>هل لكل مثال مختار نوع وسلوك متوقع؟</li>
+</ol>
+
+<details class="instructor">
+  <summary>للمدرّب</summary>
+  <ul>
+    <li>المرجع في <code>labs/solutions/D3_3_eval_set.md</code>، والمفتاح والاختيار المرجعي في <code>labs/solutions/reference/lab_3_3.json</code>، ويتحقق <code>check.py</code> من بلوغه الأهداف.</li>
+    <li>المرشحون الثمانون: 24 معتادًا، و11 حدّيًّا، و45 يجب رفضها أو تصعيدها، و23 بالإنجليزية. ولا يوجد بين الثمانين إلا مرشح واحد سلوكه B5: من لم يجده لا يبلغ هدف السلوكيات. لا تقل ذلك قبل الخطوة 4.</li>
+    <li>الخطأ الشائع: عدّ التغطية بالمجموع وحده. خمسون مثالًا معتادًا تبلغ المجموع ولا تقيس شيئًا مما يضر.</li>
+    <li>هذا المختبر مقيَّم مع 3.4: ورقة الوسم بأعداد التغطية.</li>
+  </ul>
+</details>
+</article>
+<nav class="pager"><a href="D3_2_criteria.html" rel="prev">→ المختبر السابق</a><a href="D3_4_data_needs.html" rel="next">المختبر التالي ←</a></nav>
+</main>
+<footer><div class="wrap">أكاديمية سدايا · مسار التنفيذيين والقادة · استكشاف منتجات الذكاء الاصطناعي وإعداد مواصفاتها<br><span class="muted">إصدار المقرر 2027.1.0 · المحرّك 1.0.0 · بُني في ⁦2026-11-18⁩ · الإيداع 2672fae</span></div></footer>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-18T06:35:29Z","version":"2027.1.0","commit":"2672fae"},"course":{"id":"lds-prd-201","code":"LDS-PRD-201","title":"استكشاف منتجات الذكاء الاصطناعي وإعداد مواصفاتها","track":"executives","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/lds-prd-201/","repo":"SDAIAAcademy/lds-prd-201","home":"../index.html"},"lab":{"id":"3.3","title":"خمسون مثالًا موسومًا","summary":"تختار من ثمانين رسالة مرشحة خمسين مثالًا، وتوسم كلًّا منها بالنوع والسلوك المتوقع، حتى تبلغ أهداف التغطية في ورقة العد.","minutes":35,"day":3,"unit":"اليوم 3","session":3,"deck":"../slides/day3.html#lab-3-3","prev":"D3_2_criteria.html","next":"D3_4_data_needs.html","alt":{}},"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":null,"llms":"../llms.txt"},"tasks":[],"tools":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>

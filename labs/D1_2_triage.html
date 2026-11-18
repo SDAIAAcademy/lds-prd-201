@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="lab" data-track="executives">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المختبر 1.2 · فرز الطلبات الاثني عشر · استكشاف منتجات الذكاء الاصطناعي وإعداد مواصفاتها</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="D1_2_triage.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="top"><div class="logo"></div><nav><a href="../index.html">صفحة المقرر</a><a href="../slides/day1.html#lab-1-2">العودة إلى الشرائح</a></nav></div>
+<span class="tag">المختبر 1.2</span>
+<h1>فرز الطلبات الاثني عشر</h1>
+<p>تضع كل طلب في واحدة من أربع فئات، وتقدّر تكلفة الخطأ، وتكتب السبب، ثم تقارن بالمرجع وتعد الصفوف المتطابقة.</p>
+<div class="meta"><span>35 دقيقة</span><span>اليوم 1</span><span>الجلسة 2: ما تجيده النماذج ومتى تفوز القواعد</span></div>
+</div>
+</header>
+<main class="wrap">
+<article class="lab" data-lab="1.2">
+<div class="box goal">
+  <h3>ستخرج من هذا المختبر بـ</h3>
+  <ul>
+    <li>جدول فرز للطلبات الاثني عشر: الفئة، وتكلفة الخطأ، وسبب من سطر.</li>
+    <li>عدد الصفوف التي تطابق فيها فئتك المرجع، والمعيار عشرة من اثني عشر.</li>
+  </ul>
+</div>
+
+<h2>ما تحتاجه</h2>
+<div class="files">
+  <a href="files/requests_12.xlsx" download><b>requests_12.xlsx</b><span>ورقتك من المختبر 1.1، أو النسخة الفارغة إن لم تكمله: عمودا «الفئة» و«تكلفة الخطأ» فيهما قوائم منسدلة.</span></a>
+  <a href="files/service_rules.txt" download><b>service_rules.txt</b><span>قواعد الخدمة: أنواع التراخيص ورموز الإعادة والتصعيد.</span></a>
+</div>
+<div class="callout note"><b>ذكاء اصطناعي مرشد.</b> المساعد يسألك عن البيانات والقرار في كل طلب، ولا يعطيك الفئة. الفرز المقيَّم فرزك.</div>
+<div class="prompt" data-tool="مساعد محادثة">سأعرض عليك طلبًا وفئة اخترتها له من أربع: نموذج توليدي، نموذج تنبؤي، قواعد، دون أتمتة. لا تقل لي الفئة الصحيحة. اسألني ثلاثة أسئلة بالترتيب: ما البيانات الموجودة اليوم؟ هل الجواب محدد يمكن كتابته قاعدة؟ من يتحمل القرار إذا أخطأ؟ الطلب: <span class="ph">الطلب</span>. فئتي: <span class="ph">الفئة</span></div>
+
+<h2>الخطوات</h2>
+
+<div class="step">
+  <h3>1 · اقرأ تعريف الفئات الأربع وأسئلتها <span class="min">4 د</span></h3>
+  <table>
+    <tr><th>الفئة</th><th>تختارها حين</th></tr>
+    <tr><td>نموذج توليدي</td><td>المخرج نص أو حقول من نص حر، ويتحقق منه إنسان أو فحص</td></tr>
+    <tr><td>نموذج تنبؤي</td><td>لديك سجل موسوم بالنتيجة، والمخرج رقم أو احتمال أو ترتيب</td></tr>
+    <tr><td>قواعد</td><td>الجواب محدد ويمكن كتابته شرطًا أو جدولًا أو استعلامًا</td></tr>
+    <tr><td>دون أتمتة</td><td>القرار يتحمله شخص بصفته، أو الحجم صغير، أو العمل يُنجز مرة واحدة</td></tr>
+  </table>
+</div>
+
+<div class="step">
+  <h3>2 · افرز الطلبات الاثني عشر <span class="min">12 د</span></h3>
+  <p>اختر الفئة من القائمة في عمود «الفئة». ابدأ بسؤال القواعد: إن أمكن كتابة الجواب شرطًا، فلا تبحث عن نموذج.</p>
+</div>
+
+<div class="step">
+  <h3>3 · قدّر تكلفة الخطأ لكل طلب <span class="min">6 د</span></h3>
+  <p>منخفضة أو متوسطة أو عالية: ماذا يحدث لمن تخدمهم الخدمة إن أخطأ الحل مرة؟ تأخير يُستدرك، أم خطر على سلامة، أم مساس بحق؟</p>
+</div>
+
+<div class="step">
+  <h3>4 · اكتب سبب كل فرز في سطر <span class="min">7 د</span></h3>
+  <p>يذكر السبب البيانات الموجودة والقرار ومن يتحمله، مثل: «الحالة حقل في النظام: استعلام يكفي».</p>
+</div>
+
+<div class="step">
+  <h3>5 · قارن بالمرجع وعدّ الصفوف المتطابقة <span class="min">6 د</span></h3>
+  <p>يعرض المدرّب المرجع بعد هذه الخطوة. عدّ الصفوف التي تطابقت فيها الفئة، واكتب لكل اختلاف من الأقرب إلى الوقائع.</p>
+</div>
+
+<div class="step stretch">
+  <h3>✱ تمرين إضافي</h3>
+  <p>اختر طلبًا صنفته «قواعد» واكتب الشرط الذي يجعله يحتاج نموذجًا.</p>
+</div>
+
+<h2>أسئلة تحقق</h2>
+<ol class="checks">
+  <li>كم صفًّا طابق المرجع؟ والمعيار عشرة من اثني عشر.</li>
+  <li>في أي طلب كانت تكلفة الخطأ هي التي حسمت الفئة؟</li>
+  <li>أي طلب اخترت له نموذجًا وكانت القواعد تكفيه؟</li>
+</ol>
+
+<details class="instructor">
+  <summary>للمدرّب</summary>
+  <ul>
+    <li>المرجع في <code>labs/solutions/D1_2_triage.md</code>. التوزيع غير متساو عمدًا: أربعة توليدي، واثنان تنبؤي، وأربعة قواعد، واثنان دون أتمتة. لا تذكر التوزيع قبل الخطوة 5.</li>
+    <li>أكثر الخلافات: Q01 (الحالة حقل في النظام، فالقواعد تكفي)، وQ07 (لا تاريخ موسوم موثوق، فالتوليدي أنسب من التنبؤي)، وQ05 (قرار سلامة يتحمله المهندس المناوب).</li>
+    <li>هذا المختبر مقيَّم: يُسلَّم جدول الفرز بأسبابه، ويُحتسب التطابق في عشرة صفوف على الأقل.</li>
+  </ul>
+</details>
+</article>
+<nav class="pager"><a href="D1_1_outcomes.html" rel="prev">→ المختبر السابق</a><a href="D1_3_interviews.html" rel="next">المختبر التالي ←</a></nav>
+</main>
+<footer><div class="wrap">أكاديمية سدايا · مسار التنفيذيين والقادة · استكشاف منتجات الذكاء الاصطناعي وإعداد مواصفاتها<br><span class="muted">إصدار المقرر 2027.1.0 · المحرّك 1.0.0 · بُني في ⁦2026-11-18⁩ · الإيداع 2672fae</span></div></footer>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-18T06:35:29Z","version":"2027.1.0","commit":"2672fae"},"course":{"id":"lds-prd-201","code":"LDS-PRD-201","title":"استكشاف منتجات الذكاء الاصطناعي وإعداد مواصفاتها","track":"executives","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/lds-prd-201/","repo":"SDAIAAcademy/lds-prd-201","home":"../index.html"},"lab":{"id":"1.2","title":"فرز الطلبات الاثني عشر","summary":"تضع كل طلب في واحدة من أربع فئات، وتقدّر تكلفة الخطأ، وتكتب السبب، ثم تقارن بالمرجع وتعد الصفوف المتطابقة.","minutes":35,"day":1,"unit":"اليوم 1","session":2,"deck":"../slides/day1.html#lab-1-2","prev":"D1_1_outcomes.html","next":"D1_3_interviews.html","alt":{}},"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":null,"llms":"../llms.txt"},"tasks":[],"tools":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>

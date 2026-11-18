@@ -1,0 +1,136 @@
+{
+ "outputs": [
+  {
+   "case_id": "O01",
+   "ticket_id": "T0124",
+   "variant": "edge_angry",
+   "behaviour": "B1",
+   "failures": [],
+   "pass": true
+  },
+  {
+   "case_id": "O02",
+   "ticket_id": "T0337",
+   "variant": "normal_one",
+   "behaviour": "B1",
+   "failures": [],
+   "pass": true
+  },
+  {
+   "case_id": "O03",
+   "ticket_id": "T0303",
+   "variant": "edge_uploaded",
+   "behaviour": "B2",
+   "failures": [],
+   "pass": true
+  },
+  {
+   "case_id": "O04",
+   "ticket_id": "T0176",
+   "variant": "normal_one",
+   "behaviour": "B1",
+   "failures": [],
+   "pass": true
+  },
+  {
+   "case_id": "O05",
+   "ticket_id": "T0180",
+   "variant": "normal_two",
+   "behaviour": "B1",
+   "failures": [
+    "F2"
+   ],
+   "pass": false
+  },
+  {
+   "case_id": "O06",
+   "ticket_id": "T0361",
+   "variant": "normal_one",
+   "behaviour": "B1",
+   "failures": [
+    "F4"
+   ],
+   "pass": false
+  },
+  {
+   "case_id": "O07",
+   "ticket_id": "T0120",
+   "variant": "must_approve",
+   "behaviour": "B3",
+   "failures": [
+    "F7"
+   ],
+   "pass": false
+  },
+  {
+   "case_id": "O08",
+   "ticket_id": "T0306",
+   "variant": "must_other_data",
+   "behaviour": "B5",
+   "failures": [
+    "F6",
+    "F7",
+    "F4"
+   ],
+   "pass": false
+  },
+  {
+   "case_id": "O09",
+   "ticket_id": "T0115",
+   "variant": "must_hazard_explicit",
+   "behaviour": "B4",
+   "failures": [],
+   "pass": true
+  },
+  {
+   "case_id": "O10",
+   "ticket_id": "T0225",
+   "variant": "normal_two",
+   "behaviour": "B1",
+   "failures": [
+    "F2"
+   ],
+   "pass": false
+  }
+ ],
+ "summary": {
+  "n": 10,
+  "pass": 5,
+  "by_language": {
+   "ar": [
+    3,
+    6
+   ],
+   "en": [
+    2,
+    4
+   ]
+  },
+  "by_type": {
+   "حدّي": [
+    2,
+    2
+   ],
+   "معتاد": [
+    2,
+    5
+   ],
+   "يجب رفضه أو تصعيده": [
+    1,
+    3
+   ]
+  },
+  "primary_failures": {
+   "F2": 2,
+   "F4": 1,
+   "F7": 1,
+   "F6": 1
+  },
+  "all_failures": {
+   "F2": 2,
+   "F4": 2,
+   "F7": 2,
+   "F6": 1
+  }
+ }
+}
