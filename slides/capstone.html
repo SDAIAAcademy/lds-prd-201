@@ -32,14 +32,14 @@
   <div class="kicker">كيف تُقيَّم الحزمة · 40% من المقرر</div>
   <h2>سلم تقدير الحزمة</h2>
   <div class="bars">
-    <div class="row"><span>المواصفات ومعايير القبول: نطاق ورفض وتصعيد، وكل معيار نعم أو لا</span><div class="bar c-teal" style="--w:100%"></div><span class="val">25</span></div>
-    <div class="row"><span>التأطير والأدلة: نتيجة ومقياس وخط أساس من التذاكر، وكل ادعاء بمصدرين</span><div class="bar c-cyan" style="--w:80%"></div><span class="val">20</span></div>
-    <div class="row"><span>مذكرة الجدوى: الاجتياز لكل مسار، وأنواع الإخفاق بأمثلة، وطريقة البناء</span><div class="bar c-coral" style="--w:80%"></div><span class="val">20</span></div>
-    <div class="row"><span>بيان البيانات: الغرض والتصنيف والبيانات الشخصية والمالك ومن يوافق والمدة والفجوات</span><div class="bar c-purple" style="--w:80%"></div><span class="val">20</span></div>
-    <div class="row"><span>مجموعة التقييم: 30 مثالًا بالمسار المتوقع وأعداد التغطية لكل مسار</span><div class="bar c-amber" style="--w:60%"></div><span class="val">15</span></div>
+    <div class="row"><span>المواصفات ومعايير القبول الثنائية</span><div class="bar c-teal" style="--w:100%"></div><span class="val">25</span></div>
+    <div class="row"><span>التأطير والأدلة، وخط الأساس من التذاكر</span><div class="bar c-cyan" style="--w:80%"></div><span class="val">20</span></div>
+    <div class="row"><span>مذكرة الجدوى لكل مسار</span><div class="bar c-coral" style="--w:80%"></div><span class="val">20</span></div>
+    <div class="row"><span>بيان البيانات والفجوات</span><div class="bar c-purple" style="--w:80%"></div><span class="val">20</span></div>
+    <div class="row"><span>مجموعة التقييم: 30 مثالًا بأعداد التغطية</span><div class="bar c-amber" style="--w:60%"></div><span class="val">15</span></div>
   </div>
   <div class="callout tip mt"><b>الدفاع بنده وحده: 10% من المقرر.</b> العرض والتعديل المباشر والإجابات لا تدخل سلم الحزمة.</div>
-  <aside class="notes"><p>المجموع 100، ويساوي 40% من درجة المقرر. أعطِ مثالًا للدرجة الكاملة في كل معيار: معيار «المسار C1 لكل شكوى فيها خطر ولو دون كلمة خطر» نعم أو لا؛ ومذكرة تقول مصدر إجاباتها وتذكر الاجتياز لكل مسار. سلم الحزمة لا يقيّم الدفاع، والدفاع لا يعيد تقييم الحزمة: اللجنة في بند الدفاع تقيّم العرض والتعديل المباشر وأثر القيد والإجابات.</p></aside>
+  <aside class="notes"><p>المعايير كاملة كما في <code>course.json</code>: المواصفات ومعايير القبول (نطاق ورفض وتصعيد، وكل معيار نعم أو لا) 25؛ والتأطير والأدلة (نتيجة ومقياس وخط أساس محسوب من التذاكر، وكل ادعاء بمصدرين) 20؛ ومذكرة الجدوى (عدد الاجتياز لكل مسار وأنواع الإخفاق بأمثلة وطريقة البناء) 20؛ وبيان البيانات (الغرض والتصنيف والبيانات الشخصية والمالك ومن يوافق والمدة والفجوات) 20؛ ومجموعة التقييم (30 مثالًا بالمسار المتوقع وأعداد التغطية لكل مسار) 15. المجموع 100، ويساوي 40% من درجة المقرر. أعطِ مثالًا للدرجة الكاملة في كل معيار: معيار «المسار C1 لكل شكوى فيها خطر ولو دون كلمة خطر» نعم أو لا؛ ومذكرة تقول مصدر إجاباتها وتذكر الاجتياز لكل مسار. سلم الحزمة لا يقيّم الدفاع، والدفاع لا يعيد تقييم الحزمة: اللجنة في بند الدفاع تقيّم العرض والتعديل المباشر وأثر القيد والإجابات.</p></aside>
 </section>
 
 <section class="slide" id="format" data-label="الصيغة">
@@ -69,6 +69,7 @@
 <section class="slide order" id="running-order" data-label="ترتيب العروض">
   <div class="kicker">ترتيب الدفاع</div>
   <h2>من يدافع ومتى</h2>
+  <div class="cols cols-2 gap-s">
   <table class="t small">
     <tr><th>#</th><th>المشارك</th><th>البطاقة</th></tr>
     <tr><td>1</td><td><input placeholder="الاسم"></td><td><input placeholder="K"></td></tr>
@@ -77,6 +78,9 @@
     <tr><td>4</td><td><input placeholder="الاسم"></td><td><input placeholder="K"></td></tr>
     <tr><td>5</td><td><input placeholder="الاسم"></td><td><input placeholder="K"></td></tr>
     <tr><td>6</td><td><input placeholder="الاسم"></td><td><input placeholder="K"></td></tr>
+  </table>
+  <table class="t small">
+    <tr><th>#</th><th>المشارك</th><th>البطاقة</th></tr>
     <tr><td>7</td><td><input placeholder="الاسم"></td><td><input placeholder="K"></td></tr>
     <tr><td>8</td><td><input placeholder="الاسم"></td><td><input placeholder="K"></td></tr>
     <tr><td>9</td><td><input placeholder="الاسم"></td><td><input placeholder="K"></td></tr>
@@ -84,6 +88,7 @@
     <tr><td>11</td><td><input placeholder="الاسم"></td><td><input placeholder="K"></td></tr>
     <tr><td>12</td><td><input placeholder="الاسم"></td><td><input placeholder="K"></td></tr>
   </table>
+  </div>
   <aside class="notes"><p>اكتب الأسماء في البداية، والبطاقة المسحوبة بعد كل دفاع. الحقول قابلة للتحرير أثناء العرض ولا تُحفظ، فاحتفظ بالقائمة في ورقة الدرجات. الاستراحة بعد السادس.</p></aside>
 </section>
 
