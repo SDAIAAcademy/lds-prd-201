@@ -5,7 +5,7 @@ AI Product Discovery and Specification
 
 مسار التنفيذيين والقادة · أكاديمية سدايا · LDS-PRD-201 · المستوى 200
 
-REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك فعله بعد المقرر
+من طلب مبهم لإضافة الذكاء الاصطناعي إلى مواصفات يبني عليها المهندسون ويختبرون وفقها: مشكلة مختارة بالأدلة، ونموذج أولي على حالات ممثلة، وقواعد سلوك، ومعايير قبول ثنائية، ومجموعة تقييم أولى، وبيان للبيانات
 
 ينقل المشاركون خدمة تراخيص افتراضية من طلب مبهم لإضافة الذكاء الاصطناعي إلى مواصفات يستطيع المهندسون البناء عليها والاختبار وفقها. فيستخرجون الأنماط من مقابلات اصطناعية ومن 500 تذكرة اصطناعية، ويختارون مشكلة بحسب التكرار والقيمة وتكلفة الخطأ، ويختبرون الجدوى بنموذج أولي على مستوى الأوامر على 30 حالة، ويكتبون قواعد السلوك ومعايير قبول نتيجتها اجتياز أو إخفاق، ومجموعة تقييم أولى، وبيانًا بالاحتياجات من البيانات.
 
@@ -30,9 +30,9 @@ REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك
 
 | الوحدة | العنوان | الجلسات | الشرائح |
 |---|---|---|---|
-| اليوم 1 | REPLACE: موضوع هذه الوحدة في كلمات قليلة | REPLACE: عنوان الجلسة 1; REPLACE: عنوان الجلسة 2; REPLACE: عنوان الجلسة 3; REPLACE: عنوان الجلسة 4 | [`slides/day1.html`](slides/day1.html) |
-| اليوم 2 | REPLACE: موضوع هذه الوحدة في كلمات قليلة | REPLACE: عنوان الجلسة 1; REPLACE: عنوان الجلسة 2; REPLACE: عنوان الجلسة 3; REPLACE: عنوان الجلسة 4 | [`slides/day2.html`](slides/day2.html) |
-| اليوم 3 | REPLACE: موضوع هذه الوحدة في كلمات قليلة | REPLACE: عنوان الجلسة 1; REPLACE: عنوان الجلسة 2; REPLACE: عنوان الجلسة 3; REPLACE: عنوان الجلسة 4 | [`slides/day3.html`](slides/day3.html) |
+| اليوم 1 | من الطلب إلى المشكلة | النتيجة قبل الميزة; ما تجيده النماذج ومتى تفوز القواعد; المقابلات والملاحظة; التنقيب في التذاكر | [`slides/day1.html`](slides/day1.html) |
+| اليوم 2 | من الفرصة إلى الجدوى | التوليف بالذكاء الاصطناعي ودونه; النموذج الأولي على مستوى الأوامر; الحالات الممثلة لا العروض; طريقة البناء | [`slides/day2.html`](slides/day2.html) |
+| اليوم 3 | من الجدوى إلى المواصفات | قواعد السلوك والرفض والتصعيد; معايير القبول فحوصًا ثنائية; مجموعة التقييم الأولى; التصنيف والبيانات الشخصية والملاك | [`slides/day3.html`](slides/day3.html) |
 | المشروع الختامي | عروض المشروع الختامي |  | [`slides/capstone.html`](slides/capstone.html) |
 <!-- /academy:units -->
 
@@ -47,18 +47,18 @@ REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك
 
 | | الجلسة | المختبر | الملف |
 |---|---|---|---|
-| 1.1 | اليوم 1 · الجلسة 1 | REPLACE: ما يبنيه المشاركون في المختبر 1.1 | [`D1_1.html`](labs/D1_1.html) |
-| 1.2 | اليوم 1 · الجلسة 2 | REPLACE: ما يبنيه المشاركون في المختبر 1.2 | [`D1_2.html`](labs/D1_2.html) |
-| 1.3 | اليوم 1 · الجلسة 3 | REPLACE: ما يبنيه المشاركون في المختبر 1.3 | [`D1_3.html`](labs/D1_3.html) |
-| 1.4 | اليوم 1 · الجلسة 4 | REPLACE: ما يبنيه المشاركون في المختبر 1.4 | [`D1_4.html`](labs/D1_4.html) |
-| 2.1 | اليوم 2 · الجلسة 1 | REPLACE: ما يبنيه المشاركون في المختبر 2.1 | [`D2_1.html`](labs/D2_1.html) |
-| 2.2 | اليوم 2 · الجلسة 2 | REPLACE: ما يبنيه المشاركون في المختبر 2.2 | [`D2_2.html`](labs/D2_2.html) |
-| 2.3 | اليوم 2 · الجلسة 3 | REPLACE: ما يبنيه المشاركون في المختبر 2.3 | [`D2_3.html`](labs/D2_3.html) |
-| 2.4 | اليوم 2 · الجلسة 4 | REPLACE: ما يبنيه المشاركون في المختبر 2.4 | [`D2_4.html`](labs/D2_4.html) |
-| 3.1 | اليوم 3 · الجلسة 1 | REPLACE: ما يبنيه المشاركون في المختبر 3.1 | [`D3_1.html`](labs/D3_1.html) |
-| 3.2 | اليوم 3 · الجلسة 2 | REPLACE: ما يبنيه المشاركون في المختبر 3.2 | [`D3_2.html`](labs/D3_2.html) |
-| 3.3 | اليوم 3 · الجلسة 3 | REPLACE: ما يبنيه المشاركون في المختبر 3.3 | [`D3_3.html`](labs/D3_3.html) |
-| 3.4 | اليوم 3 · الجلسة 4 | REPLACE: ما يبنيه المشاركون في المختبر 3.4 | [`D3_4.html`](labs/D3_4.html) |
+| 1.1 | اليوم 1 · الجلسة 1 | من اثني عشر طلبًا إلى نتائج | [`D1_1_outcomes.html`](labs/D1_1_outcomes.html) |
+| 1.2 | اليوم 1 · الجلسة 2 | فرز الطلبات الاثني عشر | [`D1_2_triage.html`](labs/D1_2_triage.html) |
+| 1.3 | اليوم 1 · الجلسة 3 | ترميز ثماني مقابلات | [`D1_3_interviews.html`](labs/D1_3_interviews.html) |
+| 1.4 | اليوم 1 · الجلسة 4 | 500 تذكرة بالأرقام | [`D1_4_tickets.html`](labs/D1_4_tickets.html) |
+| 2.1 | اليوم 2 · الجلسة 1 | خريطة الفرص | [`D2_1_opportunity_map.html`](labs/D2_1_opportunity_map.html) |
+| 2.2 | اليوم 2 · الجلسة 2 | أمر أول وخمس حالات | [`D2_2_first_prompt.html`](labs/D2_2_first_prompt.html) |
+| 2.3 | اليوم 2 · الجلسة 3 | ثلاثون حالة وسجل كامل | [`D2_3_thirty_cases.html`](labs/D2_3_thirty_cases.html) |
+| 2.4 | اليوم 2 · الجلسة 4 | مذكرة الجدوى | [`D2_4_feasibility_note.html`](labs/D2_4_feasibility_note.html) |
+| 3.1 | اليوم 3 · الجلسة 1 | مواصفات السلوك | [`D3_1_behaviour_spec.html`](labs/D3_1_behaviour_spec.html) |
+| 3.2 | اليوم 3 · الجلسة 2 | معايير يطبقها زميلان | [`D3_2_criteria.html`](labs/D3_2_criteria.html) |
+| 3.3 | اليوم 3 · الجلسة 3 | خمسون مثالًا موسومًا | [`D3_3_eval_set.html`](labs/D3_3_eval_set.html) |
+| 3.4 | اليوم 3 · الجلسة 4 | بيان الاحتياجات من البيانات | [`D3_4_data_needs.html`](labs/D3_4_data_needs.html) |
 <!-- /academy:labs -->
 
 ## المشروع الختامي
@@ -85,7 +85,24 @@ REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك
 <!-- academy:sources -->
 ## المصادر
 
-- REPLACE: كل مصدر يستشهد به المقرر مع عنوانه، في course.json ضمن "sources"؛ هذه القائمة تُكتب من هناك
+### المراجع الوطنية
+
+- [نظام حماية البيانات الشخصية (سدايا)](https://sdaia.gov.sa/ar/SDAIA/about/Documents/PersonalDataProtectionLawAr.pdf)
+- [Personal Data Protection Law (English edition)](https://sdaia.gov.sa/en/SDAIA/about/Documents/PersonalDataProtectionLaw.pdf)
+- [سياسة تصنيف البيانات، من سياسات حوكمة البيانات الوطنية (مكتب إدارة البيانات الوطنية)](https://sdaia.gov.sa/ar/SDAIA/about/Documents/DataClassificationPolicyAr.pdf)
+- [Data Classification Policy (English edition)](https://sdaia.gov.sa/en/SDAIA/about/Documents/DataClassificationPolicy.pdf)
+- [مبادئ الذكاء الاصطناعي التوليدي للجهات الحكومية (سدايا، 2025)](https://sdaia.gov.sa/ar/SDAIA/about/Files/GenAIGuidelinesForGovernmentARCompressed.pdf)
+- [Generative AI Guidelines for Government (English edition)](https://sdaia.gov.sa/en/SDAIA/about/Files/GenAIGuidelinesForGovernmentENCompressed.pdf)
+- [مبادئ أخلاقيات الذكاء الاصطناعي (سدايا، 2025)](https://sdaia.gov.sa/ar/SDAIA/about/Documents/ai-principles.pdf)
+- [AI Ethics Principles (English edition)](https://sdaia.gov.sa/en/SDAIA/about/Documents/ai-principles.pdf)
+- [سدايا: الأنظمة والسياسات (صفحة الفهرس)](https://sdaia.gov.sa/ar/SDAIA/about/Pages/RegulationsAndPolicies.aspx)
+
+### أدوات النموذج الأولي والتقييم
+
+- [OpenRouter: قائمة النماذج (اطُّلع عليها في 18 نوفمبر 2026)](https://openrouter.ai/api/v1/models)
+- [OpenRouter: حدود الطلبات للنماذج المجانية](https://openrouter.ai/docs/api-reference/limits)
+- [promptfoo: مقدمة](https://www.promptfoo.dev/docs/intro/)
+- [Inspect (UK AI Security Institute)](https://inspect.aisi.org.uk/)
 <!-- /academy:sources -->
 
 ### المرجعيات الوطنية

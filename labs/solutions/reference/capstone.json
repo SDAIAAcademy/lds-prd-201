@@ -1,0 +1,632 @@
+{
+ "cases": [
+  {
+   "case_id": "K01",
+   "ticket_id": "T0286",
+   "variant": "nuisance",
+   "route": "C3",
+   "failures": [
+    "F4",
+    "F8"
+   ],
+   "pass": false
+  },
+  {
+   "case_id": "K02",
+   "ticket_id": "T0366",
+   "variant": "nuisance",
+   "route": "C3",
+   "failures": [],
+   "pass": true
+  },
+  {
+   "case_id": "K03",
+   "ticket_id": "T0107",
+   "variant": "hazard_explicit",
+   "route": "C1",
+   "failures": [],
+   "pass": true
+  },
+  {
+   "case_id": "K04",
+   "ticket_id": "T0269",
+   "variant": "violation",
+   "route": "C2",
+   "failures": [],
+   "pass": true
+  },
+  {
+   "case_id": "K05",
+   "ticket_id": "T0217",
+   "variant": "violation",
+   "route": "C2",
+   "failures": [],
+   "pass": true
+  },
+  {
+   "case_id": "K06",
+   "ticket_id": "T0251",
+   "variant": "violation",
+   "route": "C2",
+   "failures": [],
+   "pass": true
+  },
+  {
+   "case_id": "K07",
+   "ticket_id": "T0313",
+   "variant": "nuisance",
+   "route": "C3",
+   "failures": [],
+   "pass": true
+  },
+  {
+   "case_id": "K08",
+   "ticket_id": "T0397",
+   "variant": "hazard_indirect",
+   "route": "C1",
+   "failures": [
+    "F5"
+   ],
+   "pass": false
+  },
+  {
+   "case_id": "K09",
+   "ticket_id": "T0041",
+   "variant": "info",
+   "route": "C4",
+   "failures": [
+    "F4"
+   ],
+   "pass": false
+  },
+  {
+   "case_id": "K10",
+   "ticket_id": "T0015",
+   "variant": "nuisance",
+   "route": "C3",
+   "failures": [
+    "F4",
+    "F8"
+   ],
+   "pass": false
+  },
+  {
+   "case_id": "K11",
+   "ticket_id": "T0154",
+   "variant": "violation",
+   "route": "C2",
+   "failures": [],
+   "pass": true
+  },
+  {
+   "case_id": "K12",
+   "ticket_id": "T0264",
+   "variant": "hazard_indirect",
+   "route": "C1",
+   "failures": [
+    "F5"
+   ],
+   "pass": false
+  },
+  {
+   "case_id": "K13",
+   "ticket_id": "T0196",
+   "variant": "info",
+   "route": "C4",
+   "failures": [
+    "F4"
+   ],
+   "pass": false
+  },
+  {
+   "case_id": "K14",
+   "ticket_id": "T0301",
+   "variant": "nuisance",
+   "route": "C3",
+   "failures": [],
+   "pass": true
+  },
+  {
+   "case_id": "K15",
+   "ticket_id": "T0096",
+   "variant": "hazard_indirect",
+   "route": "C1",
+   "failures": [
+    "F5"
+   ],
+   "pass": false
+  },
+  {
+   "case_id": "K16",
+   "ticket_id": "T0243",
+   "variant": "hazard_indirect",
+   "route": "C1",
+   "failures": [
+    "F5"
+   ],
+   "pass": false
+  },
+  {
+   "case_id": "K17",
+   "ticket_id": "T0410",
+   "variant": "violation",
+   "route": "C2",
+   "failures": [],
+   "pass": true
+  },
+  {
+   "case_id": "K18",
+   "ticket_id": "T0384",
+   "variant": "violation",
+   "route": "C2",
+   "failures": [],
+   "pass": true
+  },
+  {
+   "case_id": "K19",
+   "ticket_id": "T0157",
+   "variant": "hazard_explicit",
+   "route": "C1",
+   "failures": [],
+   "pass": true
+  },
+  {
+   "case_id": "K20",
+   "ticket_id": "T0186",
+   "variant": "hazard_explicit",
+   "route": "C1",
+   "failures": [],
+   "pass": true
+  },
+  {
+   "case_id": "K21",
+   "ticket_id": "T0016",
+   "variant": "nuisance",
+   "route": "C3",
+   "failures": [],
+   "pass": true
+  },
+  {
+   "case_id": "K22",
+   "ticket_id": "T0028",
+   "variant": "info",
+   "route": "C4",
+   "failures": [
+    "F4"
+   ],
+   "pass": false
+  },
+  {
+   "case_id": "K23",
+   "ticket_id": "T0414",
+   "variant": "hazard_indirect",
+   "route": "C1",
+   "failures": [
+    "F5"
+   ],
+   "pass": false
+  },
+  {
+   "case_id": "K24",
+   "ticket_id": "T0385",
+   "variant": "violation",
+   "route": "C2",
+   "failures": [],
+   "pass": true
+  },
+  {
+   "case_id": "K25",
+   "ticket_id": "T0322",
+   "variant": "hazard_explicit",
+   "route": "C1",
+   "failures": [],
+   "pass": true
+  },
+  {
+   "case_id": "K26",
+   "ticket_id": "T0280",
+   "variant": "info",
+   "route": "C4",
+   "failures": [
+    "F4"
+   ],
+   "pass": false
+  },
+  {
+   "case_id": "K27",
+   "ticket_id": "T0126",
+   "variant": "nuisance",
+   "route": "C3",
+   "failures": [
+    "F4",
+    "F8"
+   ],
+   "pass": false
+  },
+  {
+   "case_id": "K28",
+   "ticket_id": "T0195",
+   "variant": "violation",
+   "route": "C2",
+   "failures": [],
+   "pass": true
+  },
+  {
+   "case_id": "K29",
+   "ticket_id": "T0039",
+   "variant": "nuisance",
+   "route": "C3",
+   "failures": [],
+   "pass": true
+  },
+  {
+   "case_id": "K30",
+   "ticket_id": "T0268",
+   "variant": "hazard_explicit",
+   "route": "C1",
+   "failures": [],
+   "pass": true
+  }
+ ],
+ "summary": {
+  "n": 30,
+  "pass": 18,
+  "by_language": {
+   "ar": [
+    18,
+    30
+   ]
+  },
+  "by_type": {
+   "nuisance": [
+    5,
+    8
+   ],
+   "hazard_explicit": [
+    5,
+    5
+   ],
+   "violation": [
+    8,
+    8
+   ],
+   "hazard_indirect": [
+    0,
+    5
+   ],
+   "info": [
+    0,
+    4
+   ]
+  },
+  "primary_failures": {
+   "F4": 7,
+   "F5": 5
+  },
+  "all_failures": {
+   "F4": 7,
+   "F8": 3,
+   "F5": 5
+  },
+  "by_route": {
+   "C3": [
+    5,
+    8
+   ],
+   "C1": [
+    5,
+    10
+   ],
+   "C2": [
+    8,
+    8
+   ],
+   "C4": [
+    0,
+    4
+   ]
+  }
+ },
+ "candidates": [
+  {
+   "id": "KC01",
+   "text": "بلاغ خطر: كابلات مكشوفة داخل حفرية في شارع العوسج قرب المسجد. [الاسم]، حي الندى.",
+   "route": "C1",
+   "variant": "hazard_explicit"
+  },
+  {
+   "id": "KC02",
+   "text": "هل العمل في حي المروج مرخص؟ نريد فقط أن نعرف متى ينتهي. [الاسم].",
+   "route": "C4",
+   "variant": "info"
+  },
+  {
+   "id": "KC03",
+   "text": "خطر في شارع القرنفل عند [العنوان]: حفرة عميقة بلا إضاءة في الليل، وسقطت فيها سيارة جارنا. المرسل [الاسم].",
+   "route": "C1",
+   "variant": "hazard_explicit"
+  },
+  {
+   "id": "KC04",
+   "text": "بلاغ خطر: كابلات مكشوفة داخل حفرية في شارع الثُّمام قرب المسجد. [الاسم]، حي الندى.",
+   "route": "C1",
+   "variant": "hazard_explicit"
+  },
+  {
+   "id": "KC05",
+   "text": "كم مدة الحفر في شارع السِّدر؟ ومن الجهة المنفذة؟ [الاسم].",
+   "route": "C4",
+   "variant": "info"
+  },
+  {
+   "id": "KC06",
+   "text": "كم مدة الحفر في شارع الحُمّاض؟ ومن الجهة المنفذة؟ [الاسم].",
+   "route": "C4",
+   "variant": "info"
+  },
+  {
+   "id": "KC07",
+   "text": "الحفرية عند مدخل مدرسة البنات في حي المروج بلا سياج، والطالبات يمشين على حافتها كل صباح. [الاسم].",
+   "route": "C1",
+   "variant": "hazard_indirect"
+  },
+  {
+   "id": "KC08",
+   "text": "الماء متجمع في الحفرة أمام [العنوان] في شارع الحُمّاض والأرض حولها صارت رخوة وتتشقق. [الاسم].",
+   "route": "C1",
+   "variant": "hazard_indirect"
+  },
+  {
+   "id": "KC09",
+   "text": "المقاول يعمل في شارع الأرطى بعد منتصف الليل والضجيج لا يُحتمل. [الاسم]، [العنوان].",
+   "route": "C2",
+   "variant": "violation"
+  },
+  {
+   "id": "KC10",
+   "text": "لم نعد نجد موقفًا لسياراتنا منذ بدء الحفر في شارع الأرطى. متى ينتهي؟ [الاسم].",
+   "route": "C3",
+   "variant": "nuisance"
+  },
+  {
+   "id": "KC11",
+   "text": "كم مدة الحفر في شارع العوسج؟ ومن الجهة المنفذة؟ [الاسم].",
+   "route": "C4",
+   "variant": "info"
+  },
+  {
+   "id": "KC12",
+   "text": "أغلقوا مدخل الحي في حي المروج بالكامل دون أي لوحة تحويلة. [الاسم].",
+   "route": "C2",
+   "variant": "violation"
+  },
+  {
+   "id": "KC13",
+   "text": "كم مدة الحفر في شارع الأرطى؟ ومن الجهة المنفذة؟ [الاسم].",
+   "route": "C4",
+   "variant": "info"
+  },
+  {
+   "id": "KC14",
+   "text": "الماء متجمع في الحفرة أمام [العنوان] في شارع الثُّمام والأرض حولها صارت رخوة وتتشقق. [الاسم].",
+   "route": "C1",
+   "variant": "hazard_indirect"
+  },
+  {
+   "id": "KC15",
+   "text": "أكوام التراب من الحفر في شارع السِّدر ما زالت على الرصيف. [الاسم] من حي الصفا.",
+   "route": "C3",
+   "variant": "nuisance"
+  },
+  {
+   "id": "KC16",
+   "text": "هل العمل في حي النخيل مرخص؟ نريد فقط أن نعرف متى ينتهي. [الاسم].",
+   "route": "C4",
+   "variant": "info"
+  },
+  {
+   "id": "KC17",
+   "text": "أغلقوا مدخل الحي في حي النخيل بالكامل دون أي لوحة تحويلة. [الاسم].",
+   "route": "C2",
+   "variant": "violation"
+  },
+  {
+   "id": "KC18",
+   "text": "الحفرة أمام [العنوان] في شارع الحُمّاض انتهى العمل فيها من أسبوعين ولم تُسفلت حتى الآن. [الاسم].",
+   "route": "C3",
+   "variant": "nuisance"
+  },
+  {
+   "id": "KC19",
+   "text": "كم مدة الحفر في شارع الخزامى؟ ومن الجهة المنفذة؟ [الاسم].",
+   "route": "C4",
+   "variant": "info"
+  },
+  {
+   "id": "KC20",
+   "text": "المقاول يعمل في شارع السِّدر بعد منتصف الليل والضجيج لا يُحتمل. [الاسم]، [العنوان].",
+   "route": "C2",
+   "variant": "violation"
+  },
+  {
+   "id": "KC21",
+   "text": "الغبار من الحفر في شارع القرنفل يدخل البيوت كل يوم ولا يرشون الماء. [الاسم]، [العنوان].",
+   "route": "C2",
+   "variant": "violation"
+  },
+  {
+   "id": "KC22",
+   "text": "الغبار من الحفر في شارع الشيح يدخل البيوت كل يوم ولا يرشون الماء. [الاسم]، [العنوان].",
+   "route": "C2",
+   "variant": "violation"
+  },
+  {
+   "id": "KC23",
+   "text": "هل العمل في حي الربوة مرخص؟ نريد فقط أن نعرف متى ينتهي. [الاسم].",
+   "route": "C4",
+   "variant": "info"
+  },
+  {
+   "id": "KC24",
+   "text": "الحفرية عند مدخل مدرسة البنات في حي الندى بلا سياج، والطالبات يمشين على حافتها كل صباح. [الاسم].",
+   "route": "C1",
+   "variant": "hazard_indirect"
+  },
+  {
+   "id": "KC25",
+   "text": "أكوام التراب من الحفر في شارع العوسج ما زالت على الرصيف. [الاسم] من حي الربوة.",
+   "route": "C3",
+   "variant": "nuisance"
+  },
+  {
+   "id": "KC26",
+   "text": "السلام عليكم، أنا [الاسم] في شارع الخزامى [العنوان]. الحفرة مفتوحة من أسبوع والأطفال يلعبون بجانبها بعد المغرب ولا يوجد حولها شيء.",
+   "route": "C1",
+   "variant": "hazard_indirect"
+  },
+  {
+   "id": "KC27",
+   "text": "الحفرة أمام [العنوان] في شارع القرنفل انتهى العمل فيها من أسبوعين ولم تُسفلت حتى الآن. [الاسم].",
+   "route": "C3",
+   "variant": "nuisance"
+  },
+  {
+   "id": "KC28",
+   "text": "كم مدة الحفر في شارع السِّدر؟ ومن الجهة المنفذة؟ [الاسم].",
+   "route": "C4",
+   "variant": "info"
+  },
+  {
+   "id": "KC29",
+   "text": "الحفرة أمام [العنوان] في شارع العوسج انتهى العمل فيها من أسبوعين ولم تُسفلت حتى الآن. [الاسم].",
+   "route": "C3",
+   "variant": "nuisance"
+  },
+  {
+   "id": "KC30",
+   "text": "هل العمل في حي الصفا مرخص؟ نريد فقط أن نعرف متى ينتهي. [الاسم].",
+   "route": "C4",
+   "variant": "info"
+  },
+  {
+   "id": "KC31",
+   "text": "خطر في شارع العوسج عند [العنوان]: حفرة عميقة بلا إضاءة في الليل، وسقطت فيها سيارة جارنا. المرسل [الاسم].",
+   "route": "C1",
+   "variant": "hazard_explicit"
+  },
+  {
+   "id": "KC32",
+   "text": "هل العمل في حي الصفا مرخص؟ نريد فقط أن نعرف متى ينتهي. [الاسم].",
+   "route": "C4",
+   "variant": "info"
+  },
+  {
+   "id": "KC33",
+   "text": "خطر في شارع السِّدر عند [العنوان]: حفرة عميقة بلا إضاءة في الليل، وسقطت فيها سيارة جارنا. المرسل [الاسم].",
+   "route": "C1",
+   "variant": "hazard_explicit"
+  },
+  {
+   "id": "KC34",
+   "text": "المقاول يعمل في شارع الثُّمام بعد منتصف الليل والضجيج لا يُحتمل. [الاسم]، [العنوان].",
+   "route": "C2",
+   "variant": "violation"
+  },
+  {
+   "id": "KC35",
+   "text": "هل العمل في حي النخيل مرخص؟ نريد فقط أن نعرف متى ينتهي. [الاسم].",
+   "route": "C4",
+   "variant": "info"
+  },
+  {
+   "id": "KC36",
+   "text": "بلاغ خطر: كابلات مكشوفة داخل حفرية في شارع الأرطى قرب المسجد. [الاسم]، حي النخيل.",
+   "route": "C1",
+   "variant": "hazard_explicit"
+  },
+  {
+   "id": "KC37",
+   "text": "أكوام التراب من الحفر في شارع الخزامى ما زالت على الرصيف. [الاسم] من حي الندى.",
+   "route": "C3",
+   "variant": "nuisance"
+  },
+  {
+   "id": "KC38",
+   "text": "لم نعد نجد موقفًا لسياراتنا منذ بدء الحفر في شارع الرَّمث. متى ينتهي؟ [الاسم].",
+   "route": "C3",
+   "variant": "nuisance"
+  },
+  {
+   "id": "KC39",
+   "text": "الحفرة أمام [العنوان] في شارع السِّدر انتهى العمل فيها من أسبوعين ولم تُسفلت حتى الآن. [الاسم].",
+   "route": "C3",
+   "variant": "nuisance"
+  },
+  {
+   "id": "KC40",
+   "text": "لم نعد نجد موقفًا لسياراتنا منذ بدء الحفر في شارع الأرطى. متى ينتهي؟ [الاسم].",
+   "route": "C3",
+   "variant": "nuisance"
+  },
+  {
+   "id": "KC41",
+   "text": "أغلقوا مدخل الحي في حي المروج بالكامل دون أي لوحة تحويلة. [الاسم].",
+   "route": "C2",
+   "variant": "violation"
+  },
+  {
+   "id": "KC42",
+   "text": "أكوام التراب من الحفر في شارع القرنفل ما زالت على الرصيف. [الاسم] من حي المروج.",
+   "route": "C3",
+   "variant": "nuisance"
+  },
+  {
+   "id": "KC43",
+   "text": "السلام عليكم، أنا [الاسم] في شارع الطلح [العنوان]. الحفرة مفتوحة من أسبوع والأطفال يلعبون بجانبها بعد المغرب ولا يوجد حولها شيء.",
+   "route": "C1",
+   "variant": "hazard_indirect"
+  },
+  {
+   "id": "KC44",
+   "text": "الحفرية عند مدخل مدرسة البنات في حي الواحة بلا سياج، والطالبات يمشين على حافتها كل صباح. [الاسم].",
+   "route": "C1",
+   "variant": "hazard_indirect"
+  },
+  {
+   "id": "KC45",
+   "text": "كم مدة الحفر في شارع الخزامى؟ ومن الجهة المنفذة؟ [الاسم].",
+   "route": "C4",
+   "variant": "info"
+  },
+  {
+   "id": "KC46",
+   "text": "المقاول يعمل في شارع العوسج بعد منتصف الليل والضجيج لا يُحتمل. [الاسم]، [العنوان].",
+   "route": "C2",
+   "variant": "violation"
+  },
+  {
+   "id": "KC47",
+   "text": "كم مدة الحفر في شارع السِّدر؟ ومن الجهة المنفذة؟ [الاسم].",
+   "route": "C4",
+   "variant": "info"
+  },
+  {
+   "id": "KC48",
+   "text": "المقاول يعمل في شارع القرنفل بعد منتصف الليل والضجيج لا يُحتمل. [الاسم]، [العنوان].",
+   "route": "C2",
+   "variant": "violation"
+  },
+  {
+   "id": "KC49",
+   "text": "الحفرية عند مدخل مدرسة البنات في حي الواحة بلا سياج، والطالبات يمشين على حافتها كل صباح. [الاسم].",
+   "route": "C1",
+   "variant": "hazard_indirect"
+  },
+  {
+   "id": "KC50",
+   "text": "الحفرة أمام [العنوان] في شارع الحُمّاض انتهى العمل فيها من أسبوعين ولم تُسفلت حتى الآن. [الاسم].",
+   "route": "C3",
+   "variant": "nuisance"
+  }
+ ]
+}

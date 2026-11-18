@@ -1,0 +1,390 @@
+{
+ "by_category": {
+  "status": {
+   "label": "الاستفسار عن حالة الطلب",
+   "count": 120,
+   "median_minutes": 4.0,
+   "total_minutes": 528,
+   "reopen_pct": 8,
+   "english_pct": 25,
+   "cost_of_error": "منخفضة"
+  },
+  "returned": {
+   "label": "سبب إعادة الطلب ونواقصه",
+   "count": 95,
+   "median_minutes": 17,
+   "total_minutes": 1699,
+   "reopen_pct": 39,
+   "english_pct": 34,
+   "cost_of_error": "متوسطة"
+  },
+  "extension": {
+   "label": "تمديد مدة الترخيص",
+   "count": 55,
+   "median_minutes": 9,
+   "total_minutes": 554,
+   "reopen_pct": 5,
+   "english_pct": 35,
+   "cost_of_error": "متوسطة"
+  },
+  "traffic": {
+   "label": "خطة إدارة الحركة",
+   "count": 40,
+   "median_minutes": 14.5,
+   "total_minutes": 619,
+   "reopen_pct": 15,
+   "english_pct": 40,
+   "cost_of_error": "متوسطة"
+  },
+  "guarantee": {
+   "label": "استرداد ضمان السفلتة",
+   "count": 35,
+   "median_minutes": 12,
+   "total_minutes": 449,
+   "reopen_pct": 17,
+   "english_pct": 31,
+   "cost_of_error": "متوسطة"
+  },
+  "emergency": {
+   "label": "إصلاح طارئ",
+   "count": 30,
+   "median_minutes": 7.0,
+   "total_minutes": 223,
+   "reopen_pct": 17,
+   "english_pct": 20,
+   "cost_of_error": "عالية"
+  },
+  "complaint": {
+   "label": "شكوى ساكن من حفرية",
+   "count": 45,
+   "median_minutes": 11,
+   "total_minutes": 555,
+   "reopen_pct": 27,
+   "english_pct": 0,
+   "cost_of_error": "عالية"
+  },
+  "clash": {
+   "label": "تعارض مع ترخيص آخر",
+   "count": 25,
+   "median_minutes": 17,
+   "total_minutes": 449,
+   "reopen_pct": 24,
+   "english_pct": 36,
+   "cost_of_error": "متوسطة"
+  },
+  "portal": {
+   "label": "الدخول إلى البوابة",
+   "count": 30,
+   "median_minutes": 7.0,
+   "total_minutes": 208,
+   "reopen_pct": 17,
+   "english_pct": 13,
+   "cost_of_error": "منخفضة"
+  },
+  "fine": {
+   "label": "اعتراض على مخالفة",
+   "count": 25,
+   "median_minutes": 9,
+   "total_minutes": 220,
+   "reopen_pct": 16,
+   "english_pct": 24,
+   "cost_of_error": "عالية"
+  }
+ },
+ "by_tag": [
+  {
+   "tag": "حالة طلب",
+   "count": 144,
+   "median_minutes": 5.0,
+   "reopen_pct": 15,
+   "total_minutes": 1012
+  },
+  {
+   "tag": "نواقص وإعادة",
+   "count": 67,
+   "median_minutes": 17,
+   "reopen_pct": 36,
+   "total_minutes": 1196
+  },
+  {
+   "tag": "تمديد",
+   "count": 52,
+   "median_minutes": 9.5,
+   "reopen_pct": 4,
+   "total_minutes": 526
+  },
+  {
+   "tag": "خطة مرورية",
+   "count": 39,
+   "median_minutes": 15,
+   "reopen_pct": 13,
+   "total_minutes": 610
+  },
+  {
+   "tag": "شكوى",
+   "count": 36,
+   "median_minutes": 11.5,
+   "reopen_pct": 31,
+   "total_minutes": 435
+  },
+  {
+   "tag": "ضمان",
+   "count": 34,
+   "median_minutes": 12.5,
+   "reopen_pct": 18,
+   "total_minutes": 440
+  },
+  {
+   "tag": "دخول البوابة",
+   "count": 29,
+   "median_minutes": 7,
+   "reopen_pct": 14,
+   "total_minutes": 204
+  },
+  {
+   "tag": "أخرى",
+   "count": 27,
+   "median_minutes": 9,
+   "reopen_pct": 22,
+   "total_minutes": 262
+  },
+  {
+   "tag": "طارئ",
+   "count": 25,
+   "median_minutes": 7,
+   "reopen_pct": 16,
+   "total_minutes": 190
+  },
+  {
+   "tag": "تعارض",
+   "count": 24,
+   "median_minutes": 17.5,
+   "reopen_pct": 25,
+   "total_minutes": 433
+  },
+  {
+   "tag": "مخالفة",
+   "count": 23,
+   "median_minutes": 9,
+   "reopen_pct": 17,
+   "total_minutes": 196
+  }
+ ],
+ "tickets": 500,
+ "english_total": 133,
+ "duplicates": 12,
+ "returned_tagged_status": 28,
+ "status_tag_total": 144,
+ "status_tag_really_returned_pct": 19,
+ "complaints_tagged_other": 9,
+ "tickets_with_personal_data": 45,
+ "total_minutes": 5504,
+ "licence_returned_pct": [
+  31.0,
+  29.8
+ ],
+ "triage_key_counts": {
+  "توليدي": 4,
+  "تنبؤي": 2,
+  "قواعد": 4,
+  "دون أتمتة": 2
+ },
+ "demo": {
+  "n": 5,
+  "pass": 5,
+  "by_language": {
+   "ar": [
+    5,
+    5
+   ]
+  },
+  "by_type": {
+   "معتاد": [
+    5,
+    5
+   ]
+  },
+  "primary_failures": {},
+  "all_failures": {}
+ },
+ "proto30": {
+  "n": 30,
+  "pass": 16,
+  "by_language": {
+   "en": [
+    5,
+    11
+   ],
+   "ar": [
+    11,
+    19
+   ]
+  },
+  "by_type": {
+   "معتاد": [
+    9,
+    17
+   ],
+   "حدّي": [
+    6,
+    7
+   ],
+   "يجب رفضه أو تصعيده": [
+    1,
+    6
+   ]
+  },
+  "primary_failures": {
+   "F2": 7,
+   "F7": 2,
+   "F5": 2,
+   "F6": 1,
+   "F3": 2
+  },
+  "all_failures": {
+   "F2": 7,
+   "F1": 3,
+   "F7": 3,
+   "F5": 2,
+   "F6": 1,
+   "F4": 1,
+   "F3": 2
+  }
+ },
+ "ten": {
+  "n": 10,
+  "pass": 5,
+  "by_language": {
+   "ar": [
+    3,
+    6
+   ],
+   "en": [
+    2,
+    4
+   ]
+  },
+  "by_type": {
+   "حدّي": [
+    2,
+    2
+   ],
+   "معتاد": [
+    2,
+    5
+   ],
+   "يجب رفضه أو تصعيده": [
+    1,
+    3
+   ]
+  },
+  "primary_failures": {
+   "F2": 2,
+   "F4": 1,
+   "F7": 1,
+   "F6": 1
+  },
+  "all_failures": {
+   "F2": 2,
+   "F4": 2,
+   "F7": 2,
+   "F6": 1
+  }
+ },
+ "eval_pool_by_type": {
+  "معتاد": 24,
+  "حدّي": 11,
+  "يجب رفضه أو تصعيده": 45
+ },
+ "eval_reference_coverage": {
+  "total": 50,
+  "by_type": {
+   "معتاد": 22,
+   "حدّي": 11,
+   "يجب رفضه أو تصعيده": 17
+  },
+  "english": 16,
+  "by_code": {
+   "R1": 9,
+   "R2": 8,
+   "R3": 6,
+   "R4": 7,
+   "R5": 7,
+   "R6": 4,
+   "R7": 4,
+   "R8": 2
+  },
+  "by_behaviour": {
+   "B1": 27,
+   "B2": 6,
+   "B3": 5,
+   "B4": 11,
+   "B5": 1
+  }
+ },
+ "capstone30": {
+  "n": 30,
+  "pass": 18,
+  "by_language": {
+   "ar": [
+    18,
+    30
+   ]
+  },
+  "by_type": {
+   "nuisance": [
+    5,
+    8
+   ],
+   "hazard_explicit": [
+    5,
+    5
+   ],
+   "violation": [
+    8,
+    8
+   ],
+   "hazard_indirect": [
+    0,
+    5
+   ],
+   "info": [
+    0,
+    4
+   ]
+  },
+  "primary_failures": {
+   "F4": 7,
+   "F5": 5
+  },
+  "all_failures": {
+   "F4": 7,
+   "F8": 3,
+   "F5": 5
+  },
+  "by_route": {
+   "C3": [
+    5,
+    8
+   ],
+   "C1": [
+    5,
+    10
+   ],
+   "C2": [
+    8,
+    8
+   ],
+   "C4": [
+    0,
+    4
+   ]
+  }
+ },
+ "capstone_candidates_by_route": {
+  "C1": 14,
+  "C2": 10,
+  "C3": 12,
+  "C4": 14
+ }
+}

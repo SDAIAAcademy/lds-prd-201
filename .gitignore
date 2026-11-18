@@ -34,3 +34,6 @@ __pycache__/
 .DS_Store
 Thumbs.db
 /*.log
+
+# Prototype runs and secrets of the lab script
+labs/prototype/runs/

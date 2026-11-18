@@ -1,0 +1,31 @@
+﻿case_id,text,record_codes
+P01,"Application [licence no.] was returned with codes R1 and R5. Could you explain both, please?",R1 R5
+P02,"Returned AGAIN. Third time for [licence no.], code R6. Every return costs us days on site and nobody explains anything.",R6
+P03,رجع طلبنا لأعمال في شارع العوسج برمز R4. نحتاج نعرف السبب وكيف نعدله.,R4
+P04,طلبي رجع. ليه؟,
+P05,تمت إعادة الطلب [رقم الترخيص] بالرمز R5 ولم نفهم المقصود. نأمل التوضيح.,R5
+P06,"We got R2 and R5 on [licence no.]. Our engineer is not sure what each one requires before we resubmit the whole file for the crossing on Al-Arta Street, so please list what is needed for each code.",R2 R5
+P07,السلام عليكم، طلب الترخيص [رقم الترخيص] رجع لنا وفيه الرمز R8. وش المطلوب بالضبط عشان نعيد التقديم؟,R8
+P08,We have a water leak flooding Al-Qaranfol Street and our licence [licence no.] was returned (R7). Can we start digging now?,R7
+P09,ثالث مرة يرجع الطلب [رقم الترخيص]!! الرمز R5. كل مرة نخسر أيامًا والمشروع متوقف.,R5
+P10,السلام عليكم، طلب الترخيص [رقم الترخيص] رجع لنا وفيه الرمز R1. وش المطلوب بالضبط عشان نعيد التقديم؟,R1
+P11,We already uploaded the document last week and [licence no.] came back again with R5. Did you receive our attachment?,R5
+P12,"Application [licence no.] was returned with codes R1 and R2. Could you explain both, please?",R1 R2
+P13,الطلب [رقم الترخيص] رجع بـ R8 بس المشروع مستعجل، اعتمدوه الآن ونكمل النواقص بعدين.,R8
+P14,السلام عليكم، طلب الترخيص [رقم الترخيص] رجع لنا وفيه الرمز R8. وش المطلوب بالضبط عشان نعيد التقديم؟,R8
+P15,Our request for works on Al-Qaranfol Street came back with reason R5. Please advise what is missing.,R5
+P16,رجع الطلب [رقم الترخيص] بسبب R4، وبالمناسبة الحفرة التي فتحها مقاول سابق في شارع السِّدر ما عليها حواجز والأطفال يمرون جنبها كل يوم.,R4
+P17,رجع طلبنا لأعمال في شارع الرَّمث برمز R5. نحتاج نعرف السبب وكيف نعدله.,R5
+P18,تمت إعادة الطلب [رقم الترخيص] بالرمز R8 ولم نفهم المقصود. نأمل التوضيح.,R8
+P19,Our application [licence no.] was returned with R3. Please send us the drawings and contact details of the other licence holder on Al-Sidr Street so we can coordinate directly.,R3
+P20,الطلب [رقم الترخيص] رجع بـ R5، we uploaded the plan already، ممكن توضحون وش الناقص؟,R5
+P21,الطلب [رقم الترخيص] رجع بـ R7. متى يصدر الترخيص إذا عدلناه اليوم؟,R7
+P22,"Our application [licence no.] came back with R2. Also, the trench left open near the school gate on Al-Awsaj Street has no fence at all and children walk past it.",R2
+P23,الطلب [رقم الترخيص] رجع بـ R1، we uploaded the plan already، ممكن توضحون وش الناقص؟,R1
+P24,"Hello, application [licence no.] was returned with code R1. What exactly do we need to fix?",R1
+P25,رفعنا المستند المطلوب قبل يومين والطلب [رقم الترخيص] رجع مرة ثانية بالرمز R5. هل وصلكم المرفق؟,R5
+P26,رجع طلب التمديد في شارع الحُمّاض بالرمزين R2 وR6، ما الذي ينقصنا؟,R2 R6
+P27,الطلب [رقم الترخيص] رجع بـ R4. نطلب إعفاءنا من الضمان لأن العمل صغير.,R4
+P28,الطلب [رقم الترخيص] رجع وعليه رمزان R2 وR4. نرجو توضيح المطلوب في كل منهما.,R2 R4
+P29,الطلب [رقم الترخيص] رجع وعليه رمزان R2 وR5. نرجو توضيح المطلوب في كل منهما.,R2 R5
+P30,Application [licence no.] returned (R5). How long will it take after we resubmit?,R5
