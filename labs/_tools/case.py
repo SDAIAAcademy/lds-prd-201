@@ -1,4 +1,4 @@
-"""Fixed facts of the case study: the Excavation Licences Service of Al-Rimram City Municipality.
+"""Fixed facts of the case study: the Excavation Licences Service of Al-Nawwar City Municipality.
 
 Everything here is fictional. The rules in SERVICE_RULES are the case's own rules, not a national
 text. prepare_files.py turns these facts and texts.py into the files under labs/files/.
@@ -6,7 +6,7 @@ text. prepare_files.py turns these facts and texts.py into the files under labs/
 
 SEED = 20271
 
-ORG_AR = "أمانة مدينة الرِّمرام"
+ORG_AR = "أمانة مدينة النُّوّار"
 SERVICE_AR = "خدمة تراخيص الحفر"
 
 PEOPLE = [
@@ -98,10 +98,10 @@ COST_OF_ERROR = {
     "portal": "منخفضة", "fine": "عالية",
 }
 
-STREETS_AR = ["شارع السِّدر", "شارع الخزامى", "شارع الأرطى", "شارع الثُّمام", "شارع العوسج",
-              "شارع الشيح", "شارع الرَّمث", "شارع الحُمّاض", "شارع الطلح", "شارع القرنفل"]
-STREETS_EN = ["Al-Sidr Street", "Al-Khuzama Street", "Al-Arta Street", "Al-Thumam Street",
-              "Al-Awsaj Street", "Al-Shih Street", "Al-Rimth Street", "Al-Hummad Street",
+STREETS_AR = ["شارع السِّدر", "شارع الخزامى", "شارع الأرطى", "شارع الغَضا", "شارع العوسج",
+              "شارع الشيح", "شارع العَرفج", "شارع الحُمّاض", "شارع الطلح", "شارع القرنفل"]
+STREETS_EN = ["Al-Sidr Street", "Al-Khuzama Street", "Al-Arta Street", "Al-Ghadha Street",
+              "Al-Awsaj Street", "Al-Shih Street", "Al-Arfaj Street", "Al-Hummad Street",
               "Al-Talh Street", "Al-Qaranfol Street"]
 DISTRICTS_AR = ["حي الندى", "حي المروج", "حي الواحة", "حي الصفا", "حي الربوة", "حي النخيل"]
 

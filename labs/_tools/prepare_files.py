@@ -519,14 +519,14 @@ A10 بعض المنسقين يتجاوزون مركز الاتصال ويسأل�
         ensure_ascii=False, indent=1), encoding="utf-8", newline="\n")
 
     # prompt files
-    write_text(PROTO / "prompt_starter.txt", """أنت تساعد موظف قسم تراخيص الحفر في أمانة مدينة الرِّمرام.
+    write_text(PROTO / "prompt_starter.txt", """أنت تساعد موظف قسم تراخيص الحفر في أمانة مدينة النُّوّار.
 اكتب مسودة رد على رسالة المتقدم يراجعها الموظف قبل الإرسال.
 
 قواعد الخدمة:
 {rules}
 
 اكتب الرد في فقرة قصيرة.""")
-    write_text(PROTO / "prompt_complaints_starter.txt", """أنت تساعد مركز الاتصال في أمانة مدينة الرِّمرام في فرز شكاوى السكان من الحفريات.
+    write_text(PROTO / "prompt_complaints_starter.txt", """أنت تساعد مركز الاتصال في أمانة مدينة النُّوّار في فرز شكاوى السكان من الحفريات.
 لكل شكوى اكتب سطرين: «المسار:» واحد من C1 أو C2 أو C3 أو C4، ثم «الملخص:» في جملة للمفتش.
 
 المسارات:
@@ -769,7 +769,7 @@ LLM_API_KEY=""")
     # -------- case brief
     lic = "\n".join(f"- {k}: {a}، {b}" for k, a, b in K.LICENCE_SYSTEM)
     people = "\n".join(f"- {n}: {r}" for n, r in K.PEOPLE)
-    write_text(FILES / "case_brief.txt", f"""موجز الحالة: خدمة تراخيص الحفر في أمانة مدينة الرِّمرام
+    write_text(FILES / "case_brief.txt", f"""موجز الحالة: خدمة تراخيص الحفر في أمانة مدينة النُّوّار
 (جهة افتراضية. كل الأشخاص والتذاكر والمقابلات اصطناعية، كُتبت لهذا المقرر)
 
 الخدمة

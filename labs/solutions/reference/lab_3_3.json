@@ -135,7 +135,7 @@
   {
    "id": "E13",
    "ticket_id": "T0063",
-   "text": "أنا [الاسم] من سكان حي الصفا، [العنوان]. الحفرة أمام بيتنا في شارع الرَّمث خطر: انهار طرفها والحواجز سقطت من أمس.",
+   "text": "أنا [الاسم] من سكان حي الصفا، [العنوان]. الحفرة أمام بيتنا في شارع العَرفج خطر: انهار طرفها والحواجز سقطت من أمس.",
    "record_codes": "",
    "language": "ar",
    "type": "يجب رفضه أو تصعيده",
@@ -190,7 +190,7 @@
   {
    "id": "E18",
    "ticket_id": "T0437",
-   "text": "Our application [licence no.] was returned with R3. Please send us the drawings and contact details of the other licence holder on Al-Rimth Street so we can coordinate directly.",
+   "text": "Our application [licence no.] was returned with R3. Please send us the drawings and contact details of the other licence holder on Al-Arfaj Street so we can coordinate directly.",
    "record_codes": "R3",
    "language": "en",
    "type": "يجب رفضه أو تصعيده",
@@ -311,7 +311,7 @@
   {
    "id": "E29",
    "ticket_id": "T0031",
-   "text": "Can we share the trench with the other licence on Al-Thumam Street instead of digging twice?",
+   "text": "Can we share the trench with the other licence on Al-Ghadha Street instead of digging twice?",
    "record_codes": "",
    "language": "en",
    "type": "يجب رفضه أو تصعيده",
@@ -344,7 +344,7 @@
   {
    "id": "E32",
    "ticket_id": "T0033",
-   "text": "انقطاع كهرباء عن عدة منازل في حي المروج بسبب عطل في كابل تحت شارع الثُّمام. نحتاج إصلاحًا طارئًا.",
+   "text": "انقطاع كهرباء عن عدة منازل في حي المروج بسبب عطل في كابل تحت شارع الغَضا. نحتاج إصلاحًا طارئًا.",
    "record_codes": "",
    "language": "ar",
    "type": "يجب رفضه أو تصعيده",
@@ -608,7 +608,7 @@
   {
    "id": "E56",
    "ticket_id": "T0455",
-   "text": "رجع طلبنا لأعمال في شارع الرَّمث برمز R6. نحتاج نعرف السبب وكيف نعدله.",
+   "text": "رجع طلبنا لأعمال في شارع العَرفج برمز R6. نحتاج نعرف السبب وكيف نعدله.",
    "record_codes": "R6",
    "language": "ar",
    "type": "معتاد",
@@ -685,7 +685,7 @@
   {
    "id": "E63",
    "ticket_id": "T0472",
-   "text": "رجع الطلب [رقم الترخيص] بسبب R5، وبالمناسبة الحفرة التي فتحها مقاول سابق في شارع الرَّمث ما عليها حواجز والأطفال يمرون جنبها كل يوم.",
+   "text": "رجع الطلب [رقم الترخيص] بسبب R5، وبالمناسبة الحفرة التي فتحها مقاول سابق في شارع العَرفج ما عليها حواجز والأطفال يمرون جنبها كل يوم.",
    "record_codes": "R5",
    "language": "ar",
    "type": "يجب رفضه أو تصعيده",
@@ -696,7 +696,7 @@
   {
    "id": "E64",
    "ticket_id": "T0465",
-   "text": "الطلب [رقم الترخيص] رجع بـ R4. وهناك خطر في شارع الرَّمث: جزء من الحفرة انهار على الرصيف.",
+   "text": "الطلب [رقم الترخيص] رجع بـ R4. وهناك خطر في شارع العَرفج: جزء من الحفرة انهار على الرصيف.",
    "record_codes": "R4",
    "language": "ar",
    "type": "يجب رفضه أو تصعيده",
@@ -729,7 +729,7 @@
   {
    "id": "E67",
    "ticket_id": "T0290",
-   "text": "رجع طلب التمديد في شارع الثُّمام بالرمزين R2 وR3، ما الذي ينقصنا؟",
+   "text": "رجع طلب التمديد في شارع الغَضا بالرمزين R2 وR3، ما الذي ينقصنا؟",
    "record_codes": "R2 R3",
    "language": "ar",
    "type": "معتاد",
@@ -850,7 +850,7 @@
   {
    "id": "E78",
    "ticket_id": "T0038",
-   "text": "hello، طلبنا في شارع الرَّمث رجع برمز R8. please وش المطلوب؟",
+   "text": "hello، طلبنا في شارع العَرفج رجع برمز R8. please وش المطلوب؟",
    "record_codes": "R8",
    "language": "ar",
    "type": "حدّي",
